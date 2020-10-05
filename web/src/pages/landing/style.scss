@@ -1,0 +1,48 @@
+#page-landing{
+  width: 100vw; height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+  color: var(--color-text-in-primary);
+  background-color: var(--color-primary);
+}
+.hero-image{width: 100%}
+.logo-container{text-align: center; margin-bottom: 3.2rem;
+  img{height: 7rem;}
+  h2{
+    font-weight: 500; font-size: 2.4rem; line-height: 4.6rem;
+    margin-top: 0.8rem
+}}
+.buttons-container{display:flex; justify-content: center;
+  a{
+    width: 30rem; height: 10.4rem;
+    border-radius: 0.8rem;
+    font: 700 2.0rem Arial;
+  
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+    color: var(--color--button-text);
+    transition: background-color 0.2s;
+
+    &:first-child{margin-right: 1.6rem;}
+    img{width:4rem; margin-right:2.4rem}
+  }
+  a.login{background-color: var(--color-primary-ligther);
+    &:hover{background-color: var(--color-primary-ligth)}
+  }
+  a.register{background-color: var(--color-secundary);
+    &:hover{background-color: var(--color-secundary-dark)}
+}}
+@media (max-width: 400px){.buttons-container a{width: 18rem; height: 7rem;font: 700 1.5rem Arial;}}
+@media (max-width: 659px){.hero-image{height: 30rem}.logo-container img{height: 5rem;}}
+@media (min-width: 660px) and ( max-width:999px){.hero-image{height: 30rem;}}
+@media (min-width: 1000px){
+  #page-landing-content{
+    max-width: 1100px;
+    display: grid;
+    grid-template-rows: 350px 1fr; grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "logo hero hero""buttons buttons vazio"
+  }
+  .logo-container{grid-area: logo;}
+  .hero-image{grid-area: hero; justify-self: end; max-height: 500px}
+  .buttons-container{grid-area: buttons; justify-content: flex-start;
+    a{font-size: 2.4rem}
+}}

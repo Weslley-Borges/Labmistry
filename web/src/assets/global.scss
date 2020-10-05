@@ -1,0 +1,29 @@
+*{margin: 0; padding: 0;box-sizing: border-box}
+:root{
+  font-size: 60%;
+  --color-primary-ligther: #9871F5;
+  --color-primary-ligth: #916BEA;
+  --color-primary: #8257E5;
+  --color-primary-dark: #774DD6;
+  --color-primary-darker: #6842C2;
+  --color-secundary: #04D361;
+  --color-secundary-dark: #04BF58;
+
+  --color-title-in-primary: #FFFFFF;
+  --color-text-in-primary: #D4C2FF;
+  --color-line-in-white: #E6E6F0;
+
+  --color-input-background: #F8F8FC;
+  --color-button-text: #FFFFFF;
+  --color-box-base: #FFFFFF;
+  --color-box-footer: #FAFAFC;
+}
+#root{display: flex; align-items: center; justify-content: center;}
+body,button,input,textarea{
+  font: 500 1.6rem Verdana;
+  color: var(--color-title-in-primary)
+}
+input, textarea{color: #000000}
+label{font-style: Gill Sans, sans-serif}
+.container{width: 90vw; max-width: 700px}
+@media (min-width: 700px){:root{font-size:  62.5%}}

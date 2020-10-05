@@ -1,0 +1,9 @@
+.simple-page-header{display: flex; flex-direction: column;
+  .top-bar-container{
+    width: 90%;
+    margin: 0 auto; padding-bottom: 1rem;
+    display: flex; justify-content: space-between; align-items: center;
+    a{height: 3.2rem; transition: opacity 0.2s;
+      &:hover{opacity: 0.6}}
+    & > img{height: 1.6rem}}}
+@media (min-width: 700px){.simple-page-header .top-bar-container{max-width: 1100px}}
