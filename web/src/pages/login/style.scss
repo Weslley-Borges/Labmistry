@@ -1,28 +1,28 @@
-#page-login{ 
+.page-login{ 
   width: 100vw; height: 100vh;
-  color: var(--color-title-in-primary); background-color: var(--color-primary);
-  display: flex; justify-content: center; align-items: center;
-  form{
-    margin: auto; margin-top: 5rem;
-    width: 80%; max-width: 50rem;
-    fieldset{
+  color: var(--color-title-in-primary); background: var(--color-primary);
+  .page-login-content{
+    width: 100%; height:100%;
+    display: flex; justify-content: center;
+    form{
+      margin:auto; margin-top:5rem;
+      width: 80%; max-width: 50rem;
       background: var(--color-primary-ligther);
-      display: flex; justify-content: center;
       padding: 4rem 2.2rem ;
-      border-radius: 0.8rem; border: none;
-      overflow: hidden;
-      h1{ font: 700 5rem Verdana; color: var(--color-title-in-primary);}}
-    button{
-      width: 20rem; height: 7rem;
-      border: none; border-radius: 0.8rem;
-      display: flex; align-items: center; justify-content: center;
-      margin: 1.5rem auto;
-      color: var(--color-title-in-primary); background: var(--color-secundary);
-      font: 700 3rem Verdana;
-      cursor: pointer; transition: color 0.2s;
-      &:hover{background-color: var(--color-secundary-dark)}
-      img{height: 5rem; padding-right: 1.6rem}
-    }}}
-#page-login-content .input-block{padding-top: 1.6rem;}
-#page-login-content .RadioButton{margin-top: 1rem}
-#page-login-content .RadioButton label{padding: 0 0.8rem 0 .2rem;}
+      border-radius:0.8rem; border:none;
+      overflow:hidden;
+      h1{ font:700 5rem Verdana; color:var(--color-title-in-primary); text-align:center;}
+      .input-block{padding-top: 1.6rem;}
+      .RadioButton{margin-top: 1rem;
+      label{padding: 0 0.8rem 0 .2rem;}}
+      button{
+        width: 20rem; height: 7rem;
+        border: none; border-radius: 0.8rem;
+        display: flex; align-items: center; justify-content: center;
+        margin: 1.5rem auto;
+        color: var(--color-title-in-primary); background: var(--color-secundary);
+        font: 700 3rem Verdana;
+        cursor: pointer; transition: color 0.2s;
+        &:hover{background-color: var(--color-secundary-dark)}
+        img{height: 5rem; padding-right: 1.6rem}}
+}}}

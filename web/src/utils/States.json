@@ -1,0 +1,604 @@
+[
+  {
+    "id": 12,
+    "sigla": "RO",
+    "nome": "Rondônia",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFRO Ariquemes"},
+      {"nome": "IFRO Cacoal"},
+      {"nome": "IFRO Colorado do Oeste"},
+      {"nome": "IFRO Guajará-Mirim"},
+      {"nome": "IFRO Jaru"},
+      {"nome": "IFRO Ji-Paraná"},
+      {"nome": "IFRO São Miguel do Guaporé"},
+      {"nome": "IFRO Porto Velho Zona Norte"},
+      {"nome": "IFRO Porto Velho Calama"},
+      {"nome": "IFRO Vilhena"}
+    ]
+  },
+  {
+    "id": 12,
+    "sigla": "AC",
+    "nome": "Acre",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFAC Cruzeiro do Sul"},
+      {"nome": "IFAC Sena Madureira"},
+      {"nome": "IFAC Rio Branco"},
+      {"nome": "IFAC Xapuri"},
+      {"nome": "IFAC Baixa do Sol"},
+      {"nome": "IFAC Tarauacá"}
+    ]
+  },
+  {
+    "id": 13,
+    "sigla": "AM",
+    "nome": "Amazonas",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFAM Manaus Centro"},
+      {"nome": "IFAM Manaus Distrito Industrial"},
+      {"nome": "IFAM Manaus Zona Leste"},
+      {"nome": "IFAM Coari"},
+      {"nome": "IFAM Eirunepé"},
+      {"nome": "IFAM Humaitá"},
+      {"nome": "IFAM Itacoatiara"},
+      {"nome": "IFAM Lábrea"},
+      {"nome": "IFAM Manacapuru"},
+      {"nome": "IFAM Maués"},
+      {"nome": "IFAM Parintins"},
+      {"nome": "IFAM Presidente Figueredo"},
+      {"nome": "IFAM São Gabriel da Cachoeira"},
+      {"nome": "IFAM Tabatinga"},
+      {"nome": "IFAM Tefé"}
+    ]
+  },
+  {
+    "id": 14,
+    "sigla": "RR",
+    "nome": "Roraima",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFRR Amaraji"},
+      {"nome": "IFRR Boa Vista"},
+      {"nome": "IFRR Boa Vista Zona Oeste"},
+      {"nome": "IFRR Bonfim"},
+      {"nome": "IFRR Novo Paraíso"}
+    ]
+  },
+  {
+    "id": 15,
+    "sigla": "PA",
+    "nome": "Pará",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFPA Abaetetuba"},
+      {"nome": "IFPA Altamira"},
+      {"nome": "IFPA Ananindeua"},
+      {"nome": "IFPA Belém"},
+      {"nome": "IFPA Bragança"},
+      {"nome": "IFPA Breves"},
+      {"nome": "IFPA Cametá"},
+      {"nome": "IFPA Castanhal"},
+      {"nome": "IFPA Itaituba"},
+      {"nome": "IFPA Conceição Araguaia"},
+      {"nome": "IFPA Marabá Industrial"},
+      {"nome": "IFPA Rural Marabá"},
+      {"nome": "IFPA Óbidos"},
+      {"nome": "IFPA Paragominas"},
+      {"nome": "IFPA Parauapebas"},
+      {"nome": "IFPA Santarém"},
+      {"nome": "IFPA Tucurí"},
+      {"nome": "IFPA Vigia"},
+      {"nome": "IFPA CTEAD"}
+    ]
+  },
+  {
+    "id": 16,
+    "sigla": "AP",
+    "nome": "Amapá",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFAP Macapá"},
+      {"nome": "IFAP Laranjal do Jari"},
+      {"nome": "IFAP Porto Grande"},
+      {"nome": "IFAP Santana"},
+      {"nome": "IFAP Oiapoque"},
+      {"nome": "IFAP Pedra Branca"}
+    ]
+  },
+  {
+    "id": 17,
+    "sigla": "TO",
+    "nome": "Tocantins",
+    "regiao": {
+      "id": 1,
+      "sigla": "N",
+      "nome": "Norte"
+    },
+    "schools": [
+      {"nome": "IFTO Araguaína"},
+      {"nome": "IFTO Araguatins"},
+      {"nome": "IFTO Colinas do Tocantins"},
+      {"nome": "IFTO Dianópolis"},
+      {"nome": "IFTO Formoso do Araguaia"},
+      {"nome": "IFTO Gurupi"},
+      {"nome": "IFTO Lagoa da Confusão"},
+      {"nome": "IFTO Palmas"},
+      {"nome": "IFTO Paraíso do Tocantins"},
+      {"nome": "IFTO Pedro Afonso"},
+      {"nome": "IFTO Porto Nacional"},
+      {"nome": "IFTO Reitoria"}
+    ]
+  },
+  {
+    "id": 21,
+    "sigla": "MA",
+    "nome": "Maranhão",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 22,
+    "sigla": "PI",
+    "nome": "Piauí",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 23,
+    "sigla": "CE",
+    "nome": "Ceará",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 24,
+    "sigla": "RN",
+    "nome": "Rio Grande do Norte",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 25,
+    "sigla": "PB",
+    "nome": "Paraíba",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 26,
+    "sigla": "PE",
+    "nome": "Pernambuco",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 27,
+    "sigla": "AL",
+    "nome": "Alagoas",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 28,
+    "sigla": "SE",
+    "nome": "Sergipe",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+     
+    ]
+  },
+  {
+    "id": 29,
+    "sigla": "BA",
+    "nome": "Bahia",
+    "regiao": {
+      "id": 2,
+      "sigla": "NE",
+      "nome": "Nordeste"
+    },
+    "schools": [
+      {"nome": "IFBA Barreiras"},
+      {"nome": "IFBA Brumado"},
+      {"nome": "IFBA Camaçari"},
+      {"nome": "IFBA Euclides da Cunha"},
+      {"nome": "IFBA Eunápolis"},
+      {"nome": "IFBA Feira de Santana"},
+      {"nome": "IFBA Ilhéus"},
+      {"nome": "IFBA Irecê"},
+      {"nome": "IFBA Jacobina"},
+      {"nome": "IFBA Jequié"},
+      {"nome": "IFBA Juazeiro"},
+      {"nome": "IFBA Lauro do Feitas"},
+      {"nome": "IFBA Paulo Afonso"},
+      {"nome": "IFBA Polo de Inovação"},
+      {"nome": "IFBA Porto Seguro"},
+      {"nome": "IFBA Salvador"},
+      {"nome": "IFBA Santo Amaro"},
+      {"nome": "IFBA Santo Antônio de Jesus"},
+      {"nome": "IFBA Seabra"},
+      {"nome": "IFBA Simões Filho"},
+      {"nome": "IFBA Ubaitaba"},
+      {"nome": "IFBA Valença"},
+      {"nome": "IFBA Vitória da Conquista"}
+    ]
+  },
+  {
+    "id": 31,
+    "sigla": "MG",
+    "nome": "Minas Gerais",
+    "regiao": {
+      "id": 3,
+      "sigla": "SE",
+      "nome": "Sudeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 32,
+    "sigla": "ES",
+    "nome": "Espírito Santo",
+    "regiao": {
+      "id": 3,
+      "sigla": "SE",
+      "nome": "Sudeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 33,
+    "sigla": "RJ",
+    "nome": "Rio de Janeiro",
+    "regiao": {
+      "id": 3,
+      "sigla": "SE",
+      "nome": "Sudeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 35,
+    "sigla": "SP",
+    "nome": "São Paulo",
+    "regiao": {
+      "id": 3,
+      "sigla": "SE",
+      "nome": "Sudeste"
+    },
+    "schools": [
+      
+    ]
+  },
+  {
+    "id": 41,
+    "sigla": "PR",
+    "nome": "Paraná",
+    "regiao": {
+      "id": 4,
+      "sigla": "S",
+      "nome": "Sul"
+    },
+    "schools": [
+      {"nome": "IFPR Arapongas"},
+      {"nome": "IFPR Assis Chateaubriand"},
+      {"nome": "IFPR Astorga"},
+      {"nome": "IFPR Barracão"},
+      {"nome": "IFPR Campo Largo"},
+      {"nome": "IFPR Campanema"},
+      {"nome": "IFPR Cascavel"},
+      {"nome": "IFPR Colombo"},
+      {"nome": "IFPR Coronel Vivida"},
+      {"nome": "IFPR Curitiba"},
+      {"nome": "IFPR Foz do Iguaçu"},
+      {"nome": "IFPR Goioerê"},
+      {"nome": "IFPR Irati"},
+      {"nome": "IFPR Ivaiporâ"},
+      {"nome": "IFPR Jacarezinho"},
+      {"nome": "IFPR Jaguariaíva"},
+      {"nome": "IFPR Londrina"},
+      {"nome": "IFPR Palmas"},
+      {"nome": "IFPR Paranaguá"},
+      {"nome": "IFPR Paranavaí"},
+      {"nome": "IFPR Pinhais"},
+      {"nome": "IFPR Pitanga"},
+      {"nome": "IFPR Quedas do Iguaçu"},
+      {"nome": "IFPR Telêmaco Borba"},
+      {"nome": "IFPR Umuarama"},
+      {"nome": "IFPR União da Vitória"}
+    ]
+  },
+  {
+    "id": 42,
+    "sigla": "SC",
+    "nome": "Santa Catarina",
+    "regiao": {
+      "id": 4,
+      "sigla": "S",
+      "nome": "Sul"
+    },
+    "schools": [
+      {"nome": "IFSC Aranguá"},
+      {"nome": "IFSC Caçador"},
+      {"nome": "IFSC Canoinhas"},
+      {"nome": "IFSC Chapecó"},
+      {"nome": "IFSC Criciúma"},
+      {"nome": "IFSC Florianópolis"},
+      {"nome": "IFSC Florianópolis-Continente"},
+      {"nome": "IFSC Garopaba"},
+      {"nome": "IFSC Gaspar"},
+      {"nome": "IFSC Itajair"},
+      {"nome": "IFSC Jaraguá do Sul - Centro"},
+      {"nome": "IFSC Jaraguá do sul - Rau"},
+      {"nome": "IFSC Joinville"},
+      {"nome": "IFSC Lages"},
+      {"nome": "IFSC Palhoça Bilingué"},
+      {"nome": "IFSC São Carlos"},
+      {"nome": "IFSC São José"},
+      {"nome": "IFSC São Loureço do Oeste"},
+      {"nome": "IFSC São Miguel do Oeste"},
+      {"nome": "IFSC Tubarão"},
+      {"nome": "IFSC Urupema"},
+      {"nome": "IFSC Xanxerê"},
+      {"nome": "IFC Abelardo Luz"},
+      {"nome": "IFC Araquari"},
+      {"nome": "IFC Blumenal"},
+      {"nome": "IFC Brusque"},
+      {"nome": "IFC Camboriú"},
+      {"nome": "IFC Concórdia"},
+      {"nome": "IFC Fraiburgo"},
+      {"nome": "IFC Ibirama"},
+      {"nome": "IFC Luzema"},
+      {"nome": "IFC Rio do Sul"},
+      {"nome": "IFC Santa Rosa do Sul"},
+      {"nome": "IFC São Bento do Sul"},
+      {"nome": "IFC São Fransisco do Sul"},
+      {"nome": "IFC Sombrio"},
+      {"nome": "IFC Videira"}
+    ]
+  },
+  {
+    "id": 43,
+    "sigla": "RS",
+    "nome": "Rio Grande do Sul",
+    "regiao": {
+      "id": 4,
+      "sigla": "S",
+      "nome": "Sul"
+    },
+    "schools": [
+      {"nome": "IFRS Alvorada"},
+      {"nome": "IFRS Bento Gonçalves"},
+      {"nome": "IFRS Canoas"},
+      {"nome": "IFRS Caxias do Sul"},
+      {"nome": "IFRS Erechim"},
+      {"nome": "IFRS Farroupilha"},
+      {"nome": "IFRS Feliz"},
+      {"nome": "IFRS Ibirubá"},
+      {"nome": "IFRS Osório"},
+      {"nome": "IFRS Porto Alegre"},
+      {"nome": "IFRS Restinga(Porto Alegre)"},
+      {"nome": "IFRS Rio Grande"},
+      {"nome": "IFRS Rolante"},
+      {"nome": "IFRS Sertão"},
+      {"nome": "IFRS Vacaria"},
+      {"nome": "IFRS Veranópolis"},
+      {"nome": "IFRS Viamão"},
+      {"nome": "IFFRar Alegrete"},
+      {"nome": "IFFRar Frederico Westphalen"},
+      {"nome": "IFFRar Jaguari"},
+      {"nome": "IFFRar Júlio de Castilhos"},
+      {"nome": "IFFRar Panambi"},
+      {"nome": "IFFRar Santa Rosa"},
+      {"nome": "IFFRar Santo Augusto"},
+      {"nome": "IFFRar Santo Ângelo"},
+      {"nome": "IFFRar São Borja"},
+      {"nome": "IFFRar São Vicente do Sul"},
+      {"nome": "IFFRar Uruguaiana"},
+      {"nome": "IFSUL Pelotas"},
+      {"nome": "IFSUL Pelotas-Visconde da Graça"},
+      {"nome": "IFSUL Bagé"},
+      {"nome": "IFSUL Camaquâ"},
+      {"nome": "IFSUL Charqueadas"},
+      {"nome": "IFSUL Gravataí"},
+      {"nome": "IFSUL Jaguarão"},
+      {"nome": "IFSUL Lajeado"},
+      {"nome": "IFSUL Novo Hamburgo"},
+      {"nome": "IFSUL Passo Fundo"},
+      {"nome": "IFSUL Santana do Livramento"},
+      {"nome": "IFSUL Sapiranga"},
+      {"nome": "IFSUL Sapuicaia do Sul"},
+      {"nome": "IFSUL Venâncio Aires"},
+    ]
+  },
+  {
+    "id": 50,
+    "sigla": "MS",
+    "nome": "Mato Grosso do Sul",
+    "regiao": {
+      "id": 5,
+      "sigla": "CO",
+      "nome": "Centro-Oeste"
+    },
+    "schools": [
+      {"nome": "IFMS Aquidauana"},
+      {"nome": "IFMS Campo Grande"},
+      {"nome": "IFMS Corumbá"},
+      {"nome": "IFMS Coxim"},
+      {"nome": "IFMS Dourados"},
+      {"nome": "IFMS Jardim"},
+      {"nome": "IFMS Naviraí"},
+      {"nome": "IFMS Nova andradina"},
+      {"nome": "IFMS Ponta Porã"},
+      {"nome": "IFMS Três Lagoas"}
+    ]
+  },
+  {
+    "id": 51,
+    "sigla": "MT",
+    "nome": "Mato Grosso",
+    "regiao": {
+      "id": 5,
+      "sigla": "CO",
+      "nome": "Centro-Oeste"
+    },
+    "schools": [
+      {"nome": "IFMT Alta Floresta"},
+      {"nome": "IFMT Barra do Garças"},
+      {"nome": "IFMT Cáceres"},
+      {"nome": "IFMT Campo Novo do Parecis"},
+      {"nome": "IFMT Confressa"},
+      {"nome": "IFMT Cuiabá"},
+      {"nome": "IFMT Juína"},
+      {"nome": "IFMT Pontas e Lacerda - Fronteira Oeste"},
+      {"nome": "IFMT Primavera do Leste"},
+      {"nome": "IFMT Rondonópolis"},
+      {"nome": "IFMT São Vincente"},
+      {"nome": "IFMT Sorriso"},
+      {"nome": "IFMT Várzea Grande"},
+      {"nome": "IFMT Diamantino"},
+      {"nome": "IFMT Guarantâ do Norte"},
+      {"nome": "IFMT Lucas do Rio Verde"},
+      {"nome": "IFMT SINOP"},
+      {"nome": "IFMT Tangará da Serra"}
+    ]
+  },
+  {
+    "id": 52,
+    "sigla": "GO",
+    "nome": "Goiás",
+    "regiao": {
+      "id": 5,
+      "sigla": "CO",
+      "nome": "Centro-Oeste"
+    },
+    "schools": [
+      {"nome": "IFG Águas Lindas"},
+      {"nome": "IFG Anápolis"},
+      {"nome": "IFG Aparecida de Goiânia"},
+      {"nome": "IFG Cidade de GOiás"},
+      {"nome": "IFG Formosa"},
+      {"nome": "IFG Goiânia"},
+      {"nome": "IFG Gioânia Oeste"},
+      {"nome": "IFG Inhumas"},
+      {"nome": "IFG Itumbiara"},
+      {"nome": "IFG Jataí"},
+      {"nome": "IFG Luziânia"},
+      {"nome": "IFG Senador Canedo"},
+      {"nome": "IFG Uruaçu"},
+      {"nome": "IFG Valparaíso"},
+      {"nome": "IFGoiano Campos Belos"},
+      {"nome": "IFGoiano Catalão"},
+      {"nome": "IFGoiano Ceres"},
+      {"nome": "IFGoiano Cristalina"},
+      {"nome": "IFGoiano Hidrolândia"},
+      {"nome": "IFGoiano Ipameri"},
+      {"nome": "IFGoiano Iporá"},
+      {"nome": "IFGoiano Morrinhos"},
+      {"nome": "IFGoiano Posse"},
+      {"nome": "IFGoiano Rio Verde"},
+      {"nome": "IFGoiano Trindade"},
+      {"nome": "IFGoiano Urutaí"},
+      {"nome": "IFGoiano Polo de Inovação"}
+    ]
+  },
+  {
+    "id": 53,
+    "sigla": "DF",
+    "nome": "Distrito Federal",
+    "regiao": {
+      "id": 5,
+      "sigla": "CO",
+      "nome": "Centro-Oeste"
+    },
+    "schools": [
+      {"nome": "IFB Brasília"},
+      {"nome": "IFB Ceilândia"},
+      {"nome": "IFB Estrutural"},
+      {"nome": "IFB Gama"},
+      {"nome": "IFB Planaltina"},
+      {"nome": "IFB Recanto das Emas"},
+      {"nome": "IFB Riacho Fundo"},
+      {"nome": "IFB Samambaia"},
+      {"nome": "IFB São Sebastião"},
+      {"nome": "IFB Taguatinga"}
+    ]
+  }
+]

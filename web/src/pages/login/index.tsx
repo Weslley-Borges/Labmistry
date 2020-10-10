@@ -20,30 +20,30 @@ function Login() {
 	}
 
 	return (
-		<div id="page-login">
-			<div id="page-login-content" className="container">
-				<SimplePageHeader link="/"/>
+		<div className="page-login">
+			<SimplePageHeader link="/"/>
+			<div className="page-login-content">
 				<form onSubmit={validate}>
-					<fieldset><h1>Login</h1>
-						<Input name="CPF" label="CPF (somente números)" typing="text" required
-							value={CPF} onChange={(e) => { setCPF(e.target.value) }} example='12345678910'/>
-						<Input name="Password" label="Senha" typing="password" required
-							value={Password} onChange={(e) => { setPassword(e.target.value) }} />
+					<h1>Login</h1>
+					<Input name="CPF" label="CPF (somente números)" typing="text" required
+						value={CPF} onChange={(e) => { setCPF(e.target.value) }} example='12345678910'/>
+					<Input name="Password" label="Senha" typing="password" required
+						value={Password} onChange={(e) => { setPassword(e.target.value) }} />
 
-							<div className="RadioButton">
-							<input type="radio" id="opStudent" name="userPerfil" value="student"
-								checked={Student} onChange={(e) => { setStudent(e.target.checked) }} />
-							<label htmlFor="student">Aluno</label>
+					<div className="RadioButton">
+						<input type="radio" id="opStudent" name="userPerfil" value="student"
+							checked={Student} onChange={(e) => { setStudent(e.target.checked) }} />
+						<label htmlFor="student">Aluno</label>
 
-							<input type="radio" id="opTeacher" name="userPerfil" value="teacher"
-								checked={Teacher} onChange={(e) => { setTeacher(e.target.checked) }} />
-							<label htmlFor="teacher">Professor</label>
-						</div>
-					</fieldset>
+						<input type="radio" id="opTeacher" name="userPerfil" value="teacher"
+							checked={Teacher} onChange={(e) => { setTeacher(e.target.checked) }} />
+						<label htmlFor="teacher">Professor</label>
+					</div>
+						
 					<button type="submit"><img src={EnterIcon} alt="Login" />Login</button>
 				</form>
 			</div>
 		</div>
 	)
 }  
-export default Login           
+export default Login
