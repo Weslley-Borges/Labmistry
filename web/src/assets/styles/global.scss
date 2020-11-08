@@ -13,17 +13,17 @@
   --color-text-in-primary: #D4C2FF;
   --color-line-in-white: #E6E6F0;
 
-  --color-input-background: #F8F8FC;
+  --color-input-background: ##ebebeb;
   --color-button-text: #FFFFFF;
-  --color-box-base: #FFFFFF;
-  --color-box-footer: #FAFAFC;
+  --color-box-base: #FAFAFA;
+  --color-box-footer: #F0F0F0;
 }
 #root{display: flex; align-items: center; justify-content: center;}
 body,button,input,textarea{
-  font: 500 1.6rem Verdana;
+  font: 500 1.6rem "Courier New", Courier, monospace;
   color: var(--color-title-in-primary)
 }
 input, textarea{color: #000000}
-label{font-style: Gill Sans, sans-serif}
+label{font-style: Arial, Helvetica, sans-serif}
 .container{width: 90vw; max-width: 700px}
 @media (min-width: 700px){:root{font-size:  62.5%}}

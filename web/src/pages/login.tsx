@@ -1,8 +1,8 @@
 import React, { useState, FormEvent } from 'react'
-import SimplePageHeader from '../../components/simplePageHeader'
-import Input from '../../components/input'
-import EnterIcon from '../../assets/images/icons/enter.svg'
-import './style.scss'
+import SimplePageHeader from '../components/simplePageHeader'
+import Input from '../components/input'
+import EnterIcon from '../assets/images/icons/enter.svg'
+import '../assets/styles/login.scss'
 
 
 

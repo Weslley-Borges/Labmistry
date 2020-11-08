@@ -1,25 +1,35 @@
+body{
+  background-color: var(--color-line-in-white);
+}
 #page-registro-aluno{ 
   width: 100vw; height: 100%;
-  background-color: var(--color-text-in-primary);
+  background-color: var(--color-primary-light);
+}
+#page-registro-aluno .page-header .header-content {
+  margin-bottom: 6.4rem;
 }
 #page-registro-aluno-content{
+  width: 100%;
   margin: 0 auto;
   display: flex; justify-content: center; align-items: center;
-  form{margin-top: 2.5rem;
+  form{
+    margin: -3.2rem auto 3.2rem;
+    background-color: var(--color-box-base);
+    border-radius: .8rem;
     section{
       margin-top: 5rem;
-      background-color: var(--color-primary-ligth);
       padding: 2rem;
-      border-radius: .8rem;
-      .RadioButton{margin-top: 1rem}
-      .RadioButton label{padding: 0 0.8rem 0 .2rem;}
+      color: var(--color-primary);
+    }
+    section + section{
+      margin-top: 1.5rem;
     }
     footer{
       padding: 4rem 2.4rem;
       background: var(--color-box-footer);
       border: 1px solid var(--color-line-in-white);
       margin-top: 6.4rem;
-      border-radius: .8rem .8rem 0 0;
+      border-radius: .8rem;
       p{
         display: flex; align-items: center; justify-content: center;
         font-size: 1.4rem; line-height: 2.4rem;
@@ -38,7 +48,7 @@
 
 @media (min-width: 700px){
   #page-registro-aluno .page-header .header-content{margin-bottom: 0}
-  #page-registro-aluno form fieldset{padding: 0 6.4 rem;}
+  #page-registro-aluno form fieldset{padding: 0 6.4rem;}
   #page-registro-aluno form footer{
       padding: 4.0rem 6.4rem;
       display: flex;align-items: center;justify-content: space-between;
