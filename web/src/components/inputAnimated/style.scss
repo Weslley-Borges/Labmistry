@@ -1,0 +1,60 @@
+:root{
+  --color-input: #80868B;
+  --color-border-active: #916BEA;;
+  --color-border-desactive: #DADCE0;
+
+  --body-font: 'Roboto', sans-serif;
+  --normal-font-size: 1.8rem;
+  --small-font-size: 1.5rem;
+}
+
+.inputAnimated-block{
+  position: relative;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+  input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--color-border-desactive);
+    border-radius: .5rem;
+    outline: none;
+    padding: 1rem;
+    background: none;
+    z-index: 3;
+    &:focus{
+      border: 2px solid var(--color-border-active)
+    }
+    &:focus + label{
+      top: -.7rem;
+      left: .8rem;
+      color: var(--color-border-active);
+      font-size: var(--small-font-size);
+      font-weight: 500;
+      z-index: 10;
+    }
+  }
+  label{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    padding: 0.25rem;
+    color: var(--color-input);
+    font-size: var(--normal-font-size);
+    transition:.3s;
+    background: var(--color-box-base)
+  }
+  .AnimatedInput:not(:placeholder-shown):not(:focus)+.AnimatedInput-label{
+    top: -.7rem;
+    left: .8rem;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+  }
+}
+.inputAnimated-block + .inputAnimated-block{
+  margin-top: 4rem;
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "sigla": "MA",
+    "name": "Maranhão",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 2,
+    "sigla": "PI",
+    "name": "Piauí",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 3,
+    "sigla": "CE",
+    "name": "Ceará",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 4,
+    "sigla": "RN",
+    "name": "Rio Grande do Norte",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 5,
+    "sigla": "PB",
+    "name": "Paraíba",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 6,
+    "sigla": "PE",
+    "name": "Pernambuco",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 7,
+    "sigla": "AL",
+    "name": "Alagoas",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 8,
+    "sigla": "SE",
+    "name": "Sergipe",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  },
+  {
+    "id": 9,
+    "sigla": "BA",
+    "name": "Bahia",
+    "regiao": {
+      "id": 1,
+      "sigla": "NE",
+      "name": "Nordeste"
+    }
+  }
+]

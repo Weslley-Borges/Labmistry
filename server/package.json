@@ -1,8 +1,0 @@
-{
-  "name": "server",
-  "version": "1.0.0",
-  "description": "The labmistry's backend",
-  "main": "index.js",
-  "author": "Weslley Borges dos Santos, Linecker klinsman Rios",
-  "license": "MIT"
-}
