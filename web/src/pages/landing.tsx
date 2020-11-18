@@ -6,7 +6,13 @@ import LandingImg from '../assets/images/principal_image.svg'
 import LoginIcon from '../assets/images/icons/login.svg'
 import RegisterIcon from '../assets/images/icons/register.svg'
 
-import '../assets/styles/landing.scss'
+import '../assets/styles/pages/landing.scss'
+
+{/* 
+	src/pages/landing.tsx, 11/18/2020
+	Author: Weslley Borges dos Santos
+	Este arquivo é o frontend da landing page
+*/}
 
 export default function Landing() {
 	return (
@@ -19,8 +25,12 @@ export default function Landing() {
 				<img src={LandingImg} alt="" className="hero-image" />
 
 				<div className="buttons-container">
-					<Link to="/login" className="login"><img src={LoginIcon} alt="Login"/>Login</Link>
-					<Link to="/create" className="register"><img src={RegisterIcon} alt="Estudar"/>Registrar</Link>
+					<Link to="/login" className="login">
+						<img src={LoginIcon} alt="Login"/>Login
+					</Link>
+					<Link to="/create" className="register">
+						<img src={RegisterIcon} alt="Estudar"/>Registrar
+					</Link>
 				</div>
 			</div>
 		</div>

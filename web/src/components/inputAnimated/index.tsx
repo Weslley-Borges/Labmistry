@@ -1,6 +1,12 @@
 import React, { InputHTMLAttributes } from 'react'
 import './style.scss'
 
+{/* 
+	src/components/inputAnimated/index.tsx, 11/18/2020
+	Author: Weslley Borges dos Santos
+	Este arquivo é o HTML do componente inputAnimated
+*/}
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
   name: string,
   label: string,

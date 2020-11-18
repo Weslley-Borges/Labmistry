@@ -7,10 +7,15 @@ import InputAnimated from '../components/inputAnimated'
 
 import GeoStates from '../utils/states.json'
 import Schools from '../utils/schools.json'
-import '../assets/styles/register.scss'
+import '../assets/styles/pages/register.scss'
+
+{/* 
+	src/pages/registerStudent.tsx, 11/18/2020
+	Author: Weslley Borges dos Santos
+	Este arquivo é o frontend da página de registro do aluno
+*/}
 
 export default function RegisterStudent(){
-
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [CPF, setCPF] = useState('')
@@ -19,18 +24,26 @@ export default function RegisterStudent(){
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
 
+	{/*
+		A constante 'states' recebe todos os estados do arquivo
+		src/utils/states.json e depois retorna um array de 
+		objetos com valor e uma label, para servir no select de estados
+	*/}
 	const states = GeoStates.map((state) => {
-		return(
-			{value: state.name, label: state.name}
-		)
+		return( {value: state.name, label: state.name} )
 	})
+	{/*
+		A variável 'getSchools' recebe todas as escolas cujo o estado seja
+		igual ao valor do select. A variável 'schools' envia um array de
+		objetos para ser usado no select de escolas
+	*/}
 	let getSchools:any = Schools.filter( school => school.state == geoState)
-	let schools = getSchools.map( (school:any) => {
-		return(
-			{value: school.name, label: school.name}
-		)
-	})
+	let schools = getSchools.map( (school:any) => { return( {value: school.name, label: school.name} )})
 
+	{/*
+		Na função handleRegister, os dados do formulário são recebidos 
+		e avaliados, depois são mostrados em um alert, com os dados do registro (por enquanto).
+	*/}
 	function handleRegister(e: FormEvent){
 		e.preventDefault()
 		if(password == confirmPassword){
@@ -66,31 +79,50 @@ export default function RegisterStudent(){
 				<form onSubmit={handleRegister}>
 					<fieldset>
 						<legend>Seus Dados</legend>
-						<InputAnimated typing="text" label="Nome completo" name="completeName" required
-						value={name} onChange={(e) => { setName(e.target.value) }}/>
-						<InputAnimated typing="email" label="E-mail" name="email" required
-						value={email} onChange={(e) => { setEmail(e.target.value) }}/>
-						<InputAnimated typing="number" label="CPF (somente números)" name="cpf" required
-						value={CPF} onChange={(e) => { setCPF(e.target.value) }}/><br/>
+						<InputAnimated typing="text" 
+							label="Nome completo" 
+							name="completeName" required
+							value={name} 
+							onChange={(e) => { setName(e.target.value) }}
+						/>
+						<InputAnimated typing="email" 
+							label="E-mail" 
+							name="email" required
+							value={email} 
+							onChange={(e) => { setEmail(e.target.value) }}
+						/>
+						<InputAnimated typing="number" 
+							label="CPF (somente números)" 
+							name="cpf" required
+							value={CPF} onChange={(e) => { setCPF(e.target.value) }}
+						/>
 					</fieldset>
 
 					<fieldset>
 						<legend>Onde você estuda?</legend>
 						<Select name="geoState" label="Estado" 
-						value={geoState} required
-						onChange={(e) => { setGeoState(e.target.value) }}
-							options={states}/>
+							value={geoState} required
+							onChange={(e) => { setGeoState(e.target.value) }}
+							options={states}
+						/>
 						<Select name="school" label="Escola" 
-						value={school} required
-						onChange={(e) => { setSchool(e.target.value) }}
-							options={schools}/>
+							value={school} required
+							onChange={(e) => { setSchool(e.target.value) }}
+							options={schools}
+						/>
 					</fieldset>
 					
 					<fieldset>
-						<InputAnimated typing="password" label="Senha" name="password" required
-						value={password} onChange={(e) => { setPassword(e.target.value) }}/>
-						<InputAnimated typing="password" label="Confirme a senha" name="confirmPassword" required
-						value={confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value) }}/>
+						<InputAnimated typing="password" 
+							label="Senha" 
+							name="password" required
+							value={password} onChange={(e) => { setPassword(e.target.value) }}
+						/>
+						<InputAnimated typing="password" 
+							label="Confirme a senha" 
+								name="confirmPassword" required
+							value={confirmPassword} onChange={(e) => { setConfirmPassword(e.target.value) }}
+						/>
 					</fieldset>
 					
 					<footer>
