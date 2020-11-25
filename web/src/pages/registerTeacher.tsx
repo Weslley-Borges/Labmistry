@@ -4,23 +4,26 @@ import warningIcon from "../assets/images/icons/warning.svg"
 import PageHeader from '../components/pageHeader'
 import Select from '../components/select'
 import InputAnimated from '../components/inputAnimated'
+import Textarea from '../components/textarea'
 
 import GeoStates from '../utils/states.json'
 import Schools from '../utils/schools.json'
 import '../assets/styles/pages/register.scss'
 
 /* 
-	src/pages/registerStudent.tsx, 11/18/2020
+	src/pages/registerTeacher.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
-	Este arquivo é o frontend da página de registro do aluno
+	Este arquivo é o frontend da página de registro do professor
 */
 
-export default function RegisterStudent(){
+export default function RegisterTeacher(){
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [CPF, setCPF] = useState('')
 	const [geoState, setGeoState] = useState('')
 	const [school, setSchool] = useState('')
+	const [whatsapp, setWhatsapp] = useState('')
+	const [bio, setBio] = useState('')
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
 
@@ -53,6 +56,8 @@ export default function RegisterStudent(){
 				'Cpf':CPF,
 				'State': geoState,
 				'School': school,
+				'Whatsapp': whatsapp,
+				'Biography': bio,
 				'Password':password, 
 				'ConfirmPassword':confirmPassword
 			}
@@ -70,8 +75,8 @@ export default function RegisterStudent(){
 	return(
 		<div className="container page-register">
       <PageHeader
-        title="Olá, aluno!"
-        description="Receba suas aulas online"
+        title="Olá, professor"
+        description="Seus alunos te esperam"
 				link = "/create"
 			/>
 
@@ -96,10 +101,22 @@ export default function RegisterStudent(){
 							name="cpf" required
 							value={CPF} onChange={(e) => { setCPF(e.target.value) }}
 						/>
+						<Textarea
+              name = "bio"
+              label = "Escreva sobre você (300 caracteres no máximo)"
+              value = {bio}
+              onChange = {(e) => { setBio(e.target.value) }}
+              maxLength = {300}
+            />
+						<InputAnimated typing="number" 
+							label="Whatsapp (somente números)" 
+							name="whatsapp" required
+							value={whatsapp} onChange={(e) => { setWhatsapp(e.target.value) }}
+						/>
 					</fieldset>
 
 					<fieldset>
-						<legend>Onde você estuda?</legend>
+						<legend>Onde você trabalha?</legend>
 						<Select name="geoState" label="Estado" 
 							value={geoState} required
 							onChange={(e) => { setGeoState(e.target.value) }}

@@ -7,11 +7,11 @@ import chooseStudent from '../assets/images/icons/chooseStudent.svg'
 
 import '../assets/styles/pages/registing.scss'
 
-{/* 
+/* 
 	src/pages/chooseRegister.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
 	Este arquivo é o frontend da página de escolha do tipo de registro
-*/}
+*/
 
 export default function ChooseRegister(){
 	return (

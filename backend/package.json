@@ -1,0 +1,8 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend of Labmistry application",
+  "main": "index.js",
+  "author": "Weslley Borges",
+  "license": "MIT"
+}

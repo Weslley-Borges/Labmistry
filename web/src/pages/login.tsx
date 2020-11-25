@@ -6,11 +6,11 @@ import EnterIcon from '../assets/images/icons/enter.svg'
 
 import '../assets/styles/pages/login.scss'
 
-{/*
+/*
 	src/pages/login.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
 	Este arquivo é o frontend da página de login
-*/}
+*/
 
 export default function Login() {
 
@@ -19,10 +19,10 @@ export default function Login() {
 	const [Student, setStudent] = useState(true)
 	const [Teacher, setTeacher] = useState(false)
 
-	{/*
+	/*
 		Na função handleValidate, os dados do formulário são recebidos 
 		e avaliados, depois são mostrados no console do browser(por enquanto).
-	*/}
+	*/
 	function handleValidate(event:FormEvent){
 		event.preventDefault()
 

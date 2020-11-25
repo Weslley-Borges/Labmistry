@@ -25,7 +25,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
     "commit": "git-cz"
   },
   "eslintConfig": {
@@ -46,23 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "@types/react-router-dom": "^5.1.6",
-    "commitizen": "^4.2.2",
-    "cz-conventional-changelog": "3.3.0",
-    "husky": "^4.3.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./web/node_modules/cz-conventional-changelog"
-    }
+    "@types/react-router-dom": "^5.1.6"
   }
 }
