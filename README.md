@@ -5,7 +5,6 @@
 <div align="center">
 <img src="https://img.shields.io/static/v1?label=ReactJS&message=V16.13.1&color=blue&style=for-the-badge&logo=react"/>
 <img src="https://img.shields.io/static/v1?label=Typescript&message=V4.0.3&color=darkblue&style=for-the-badge&logo=typescript"/>
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 </div>
 
 Content table

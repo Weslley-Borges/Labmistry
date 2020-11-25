@@ -40,7 +40,7 @@ export default function RegisterTeacher(){
 		igual ao valor do select. A variável 'schools' envia um array de
 		objetos para ser usado no select de escolas
 	*/
-	let getSchools:any = Schools.filter( school => school.state == geoState)
+	let getSchools:any = Schools.filter( school => school.state === geoState)
 	let schools = getSchools.map( (school:any) => { return( {value: school.name, label: school.name} )})
 
 	/*
@@ -49,7 +49,7 @@ export default function RegisterTeacher(){
 	*/
 	function handleRegister(e: FormEvent){
 		e.preventDefault()
-		if(password == confirmPassword){
+		if(password === confirmPassword){
 			const registerValues = {
 				'Name':name, 
 				'Email':email, 

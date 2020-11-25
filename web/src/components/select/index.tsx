@@ -2,11 +2,11 @@ import React, { SelectHTMLAttributes } from 'react'
 
 import './style.scss'
 
-{/* 
+/* 
 	src/components/select/index.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
 	Este arquivo é o HTML do componente select
-*/}
+*/
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 	name: string; 

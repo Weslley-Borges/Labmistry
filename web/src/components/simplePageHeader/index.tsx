@@ -6,12 +6,12 @@ import BackIcon from '../../assets/images/icons/back.svg'
 
 import './style.scss'
 
-{/* 
+/* 
 	src/components/simplePageHeader/index.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
   Este arquivo é o HTML do componente simplePageHeader (uma versão
   simplificada do pageHeader)
-*/}
+*/
 
 interface  PageHeaderProps{link: string;}
 const SimplePageHeader: React.FC<PageHeaderProps> = (props) =>{

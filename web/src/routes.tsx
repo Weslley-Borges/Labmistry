@@ -6,6 +6,7 @@ import Login from './pages/login'
 import ChooseRegister from './pages/chooseRegister'
 import RegisterStudent from './pages/registerStudent'
 import RegisterTeacher from './pages/registerTeacher'
+import TeacherProfile from './pages/teacherProfile'
 
 export default function Routes() {
 	return (
@@ -16,6 +17,7 @@ export default function Routes() {
 				<Route path="/create" exact component={ChooseRegister}/>
 				<Route path="/create/student" exact component={RegisterStudent}/>
 				<Route path="/create/teacher" exact component={RegisterTeacher}/>
+				<Route path="/user/teacher" exact component={TeacherProfile}/>
       </Switch>
 		</BrowserRouter>
 )}
