@@ -19,7 +19,6 @@ import '../assets/styles/pages/register.scss'
 export default function RegisterTeacher(){
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
-	const [CPF, setCPF] = useState('')
 	const [geoState, setGeoState] = useState('')
 	const [school, setSchool] = useState('')
 	const [whatsapp, setWhatsapp] = useState('')
@@ -53,7 +52,6 @@ export default function RegisterTeacher(){
 			const registerValues = {
 				'Name':name, 
 				'Email':email, 
-				'Cpf':CPF,
 				'State': geoState,
 				'School': school,
 				'Whatsapp': whatsapp,
@@ -65,7 +63,6 @@ export default function RegisterTeacher(){
 			Informações do aluno:
 			Nome: ${registerValues.Name}
 			Email: ${registerValues.Email}
-			CPF: ${registerValues.Cpf}
 			Estado: ${registerValues.State}
 			Escola: ${registerValues.School}`
 			)
@@ -95,11 +92,6 @@ export default function RegisterTeacher(){
 							name="email" required
 							value={email} 
 							onChange={(e) => { setEmail(e.target.value) }}
-						/>
-						<InputAnimated typing="number" 
-							label="CPF (somente números)" 
-							name="cpf" required
-							value={CPF} onChange={(e) => { setCPF(e.target.value) }}
 						/>
 						<Textarea
               name = "bio"
