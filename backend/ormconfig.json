@@ -1,24 +1,19 @@
 {
    "type": "mysql",
    "host": "localhost",
-   "port": 3001,
-   "username": "admin",
-   "password": "admin",
+   "port": 3306,
+   "username": "root",
+   "password": "",
    "database": "Labmistry",
    "synchronize": true,
    "logging": false,
    "entities": [
-      "src/entity/**/*.ts"
+      "./src/entity/**/*.ts"
    ],
    "migrations": [
-      "src/migration/**/*.ts"
-   ],
-   "subscribers": [
-      "src/subscriber/**/*.ts"
+      "./src/database/migration/*.ts"
    ],
    "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
+      "migrationsDir": "./src/database/migration"
    }
 }

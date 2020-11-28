@@ -18,7 +18,6 @@ import '../assets/styles/pages/register.scss'
 export default function RegisterStudent(){
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
-	const [CPF, setCPF] = useState('')
 	const [geoState, setGeoState] = useState('')
 	const [school, setSchool] = useState('')
 	const [password, setPassword] = useState('')
@@ -50,7 +49,6 @@ export default function RegisterStudent(){
 			const registerValues = {
 				'Name':name, 
 				'Email':email, 
-				'Cpf':CPF,
 				'State': geoState,
 				'School': school,
 				'Password':password, 
@@ -60,7 +58,6 @@ export default function RegisterStudent(){
 			Informações do aluno:
 			Nome: ${registerValues.Name}
 			Email: ${registerValues.Email}
-			CPF: ${registerValues.Cpf}
 			Estado: ${registerValues.State}
 			Escola: ${registerValues.School}`
 			)
@@ -90,11 +87,6 @@ export default function RegisterStudent(){
 							name="email" required
 							value={email} 
 							onChange={(e) => { setEmail(e.target.value) }}
-						/>
-						<InputAnimated typing="number" 
-							label="CPF (somente números)" 
-							name="cpf" required
-							value={CPF} onChange={(e) => { setCPF(e.target.value) }}
 						/>
 					</fieldset>
 

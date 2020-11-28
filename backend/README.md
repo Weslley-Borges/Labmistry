@@ -1,7 +1,24 @@
-# Awesome Project Build with TypeORM
+# Labmistry - backend
 
-Steps to run this project:
+<p align="center">Typescript, MySQL and TypeORM backend of Labmistry platform/p>
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+Content table
+=================
+<!--ts-->
+   * [Starting](#Starting)
+      * [Installing Dependencies](#Installing)
+      * [Running](#Running)
+   * [Technologies](#Technologies)
+   
+<!--te-->
+# Starting
+## Installing
+To install the dependencies, run:
+<code>$ yarn add .</code>
+
+## Running
+<code>$ yarn start:backend</code>
+
+# Technologies
+- Express;
+- TypeORM
