@@ -1,0 +1,1279 @@
+[
+  {
+    "id": 1,
+    "symbol": "H",
+    "name": "Hidrogênio",
+    "atomicMass": 1.008,
+    "atomicWeight": [ 1 ],
+    "family": "Não_Metal",
+    "position": [ 1, 1 ],
+    "formula": [ "H" ]
+  },
+  {
+    "id": 2,
+    "symbol": "He",
+    "name": "Hélio",
+    "atomicMass": 4.0026,
+    "atomicWeight": [ 2 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 1 ],
+    "formula": [ "He" ]
+  } ,
+  {
+    "id": 3,
+    "symbol": "Li",
+    "name": "Lítio",
+    "atomicMass": 6.94,
+    "atomicWeight": [ 3 ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 2 ],
+    "formula": [ "Li" ]
+  } ,
+  {
+    "id": 4,
+    "symbol": "Be",
+    "name": "Berílio",
+    "atomicMass": 9.0122,
+    "atomicWeight": [ 2, 2 ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 2 ],
+    "formula": [ "Be" ]
+  } ,
+  {
+    "id": 5,
+    "symbol": "B",
+    "name": "Boro",
+    "atomicMass": 10.81,
+    "atomicWeight": [ 2, 3 ],
+    "family": "Semimetal",
+    "position": [ 13, 2 ],
+    "formula": [ "B" ]
+  } ,
+  {
+    "id": 6,
+    "symbol": "C",
+    "name": "Carbono",
+    "atomicMass": 12.011,
+    "atomicWeight": [ 2, 4 ],
+    "family": "Não_Metal",
+    "position": [ 14, 2 ],
+    "formula": [ "C" ]
+  } ,
+  {
+    "id": 7,
+    "symbol": "N",
+    "name": "Nitrogênio",
+    "atomicMass": 14.007,
+    "atomicWeight": [ 2, 5 ],
+    "family": "Não_Metal",
+    "position": [ 15, 2 ],
+    "formula": [ "N" ]
+  } ,
+  {
+    "id": 8,
+    "symbol": "O",
+    "name": "Oxigênio",
+    "atomicMass": 15.999,
+    "atomicWeight": [ 2, 6 ],
+    "family": "Não_Metal",
+    "position": [ 16, 2 ],
+    "formula": [ "O" ]
+  } ,
+  {
+    "id": 9,
+    "symbol": "F",
+    "name": "Flúor",
+    "atomicMass": 18.998,
+    "atomicWeight": [ 2, 7 ],
+    "family": "Não_Metal",
+    "position": [ 17, 2 ],
+    "formula": [ "F" ]
+  } ,
+  {
+    "id": 10,
+    "symbol": "Ne",
+    "name": "Neônio",
+    "atomicMass": 20.18,
+    "atomicWeight": [ 2, 8 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 2 ],
+    "formula": [ "Ne" ]
+  } ,
+  {
+    "id": 11,
+    "symbol": "Na",
+    "name": "Sódio",
+    "atomicMass": 22.99,
+    "atomicWeight": [ 2, 8, 1 ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 3 ],
+    "formula": [ "Na" ]
+  } ,
+  {
+    "id": 12,
+    "symbol": "Mg",
+    "name": "Magnésio",
+    "atomicMass": 24.305,
+    "atomicWeight": [ 2, 8, 2 ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 3 ],
+    "formula": [ "Mg" ]
+  } ,
+  {
+    "id": 13,
+    "symbol": "Al",
+    "name": "Alumínio",
+    "atomicMass": 26.982,
+    "atomicWeight": [ 2, 8, 3 ],
+    "family": "Metal_Representativo",
+    "position": [ 13, 3 ],
+    "formula": [ "Al" ]
+  } ,
+  {
+    "id": 14,
+    "symbol": "Si",
+    "name": "Silício",
+    "atomicMass": 28.085,
+    "atomicWeight": [ 2, 8, 4 ],
+    "family": "Semimetal",
+    "position": [ 14, 3 ],
+    "formula": [ "Si" ]
+  } ,
+  {
+    "id": 15,
+    "symbol": "P",
+    "name": "Fósforo",
+    "atomicMass": 30.974,
+    "atomicWeight": [ 2, 8, 5 ],
+    "family": "Não_Metal",
+    "position": [ 15, 3 ],
+    "formula": [ "P" ]
+  } ,
+  {
+    "id": 16,
+    "symbol": "S",
+    "name": "Enxofre",
+    "atomicMass": 32.06,
+    "atomicWeight": [ 2, 8, 6 ],
+    "family": "Não_Metal",
+    "position": [ 16, 3 ],
+    "formula": [ "S" ]
+  } ,
+  {
+    "id": 17,
+    "symbol": "Cl",
+    "name": "Cloro",
+    "atomicMass": 35.45,
+    "atomicWeight": [ 2, 8, 7 ],
+    "family": "Não_Metal",
+    "position": [ 17, 3 ],
+    "formula": [ "Cl" ]
+  } ,
+  {
+    "id": 18,
+    "symbol": "Ar",
+    "name": "Argônio",
+    "atomicMass": 39.948,
+    "atomicWeight": [ 2, 8, 8 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 3 ],
+    "formula": [ "Ar" ]
+  } ,
+  {
+    "id": 19,
+    "symbol": "K",
+    "name": "Potássio",
+    "atomicMass": 39.098,
+    "atomicWeight": [ 2, 8, 8, 1 ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 4 ],
+    "formula": [ "K" ]
+  } ,
+  {
+    "id": 20,
+    "symbol": "Ca",
+    "name": "Cálcio",
+    "atomicMass": 40.078,
+    "atomicWeight": [ 2, 8, 8, 2 ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 4 ],
+    "formula": [ "Ca" ]
+  } ,
+  {
+    "id": 21,
+    "symbol": "Sc",
+    "name": "Escândio",
+    "atomicMass": 44.956,
+    "atomicWeight": [ 2, 8, 9, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 3, 4 ],
+    "formula": [ "Sc" ]
+  } ,
+  {
+    "id": 22,
+    "symbol": "Ti",
+    "name": "Titânio",
+    "atomicMass": 47.867,
+    "atomicWeight": [ 2, 8, 10, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 4, 4 ],
+    "formula": [ "Ti" ]
+  } ,
+  {
+    "id": 23,
+    "symbol": "V",
+    "name": "Vanádio",
+    "atomicMass": 50.942,
+    "atomicWeight": [ 2, 8, 11, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 5, 4 ],
+    "formula": [ "V" ]
+  } ,
+  {
+    "id": 24,
+    "symbol": "Cr",
+    "name": "Cromo",
+    "atomicMass": 51.996,
+    "atomicWeight": [ 2, 8, 13, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 6, 4 ],
+    "formula": [ "Cr" ]
+  } ,
+  {
+    "id": 25,
+    "symbol": "Mn",
+    "name": "Manganês",
+    "atomicMass": 54.938,
+    "atomicWeight": [ 2, 8, 13, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 7, 4 ],
+    "formula": [ "Mn" ]
+  } ,
+  {
+    "id": 26,
+    "symbol": "Fe",
+    "name": "Ferro",
+    "atomicMass": 55.845,
+    "atomicWeight": [ 2, 8, 14, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 8, 4 ],
+    "formula": [ "Fe" ]
+  } ,
+  {
+    "id": 27,
+    "symbol": "Co",
+    "name": "Cobalto",
+    "atomicMass": 58.933,
+    "atomicWeight": [ 2, 8, 15, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 9, 4 ],
+    "formula": [ "Co" ]
+  } ,
+  {
+    "id": 28,
+    "symbol": "Ni",
+    "name": "Níquel",
+    "atomicMass": 58.693,
+    "atomicWeight": [ 2, 8, 16, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 10, 4 ],
+    "formula": [ "Ni" ]
+  } ,
+  {
+    "id": 29,
+    "symbol": "Cu",
+    "name": "Cobre",
+    "atomicMass": 63.546,
+    "atomicWeight": [ 2, 8, 18, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 11, 4 ],
+    "formula": [ "Cu" ]
+  } ,
+  {
+    "id": 30,
+    "symbol": "Zn",
+    "name": "Zinco",
+    "atomicMass": 65.38,
+    "atomicWeight": [ 2, 8, 18, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 12, 4 ],
+    "formula": [ "Zn" ]
+  } ,
+  {
+    "id": 31,
+    "symbol": "Ga",
+    "name": "Gálio",
+    "atomicMass": 69.723,
+    "atomicWeight": [ 2, 8, 18, 3 ],
+    "family": "Metal_Representativo",
+    "position": [ 13, 4 ],
+    "formula": [ "Ga" ]
+  } ,
+  {
+    "id": 32,
+    "symbol": "Ge",
+    "name": "Germânio",
+    "atomicMass": 72.63,
+    "atomicWeight": [ 2, 8, 18, 4 ],
+    "family": "Semimetal",
+    "position": [ 14, 4 ],
+    "formula": [ "Ge" ]
+  } ,
+  {
+    "id": 33,
+    "symbol": "As",
+    "name": "Arsênio",
+    "atomicMass": 74.922,
+    "atomicWeight": [ 2, 8, 18, 5 ],
+    "family": "Semimetal",
+    "position": [ 15, 4 ],
+    "formula": [ "As" ]
+  } ,
+  {
+    "id": 34,
+    "symbol": "Se",
+    "name": "Selênio",
+    "atomicMass": 78.971,
+    "atomicWeight": [ 2, 8, 18, 6 ],
+    "family": "Não_Metal",
+    "position": [ 16, 4 ],
+    "formula": [ "Se" ]
+  } ,
+  {
+    "id": 35,
+    "symbol": "Br",
+    "name": "Bromo",
+    "atomicMass": 79.904,
+    "atomicWeight": [ 2, 8, 18, 7 ],
+    "family": "Não_Metal",
+    "position": [ 17, 4 ],
+    "formula": [ "Br" ]
+  } ,
+  {
+    "id": 36,
+    "symbol": "Kr",
+    "name": "Criptônio",
+    "atomicMass": 83.798,
+    "atomicWeight": [ 2, 8, 18, 8 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 4 ],
+    "formula": [ "Kr" ]
+  } ,
+  {
+    "id": 37,
+    "symbol": "Rb",
+    "name": "Rubídio",
+    "atomicMass": 85.468,
+    "atomicWeight": [ 2, 8, 18, 8, 1 ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 5 ],
+    "formula": [ "Rb" ]
+  } ,
+  {
+    "id": 38,
+    "symbol": "Sr",
+    "name": "Estrôncia",
+    "atomicMass": 87.62,
+    "atomicWeight": [ 2, 8, 18, 8, 2 ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 5 ],
+    "formula": [ "Sr" ]
+  } ,
+  {
+    "id": 39,
+    "symbol": "Y",
+    "name": "Ítrio",
+    "atomicMass": 88.906,
+    "atomicWeight": [ 2, 8, 18, 9, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 3, 5 ],
+    "formula": [ "Y" ]
+  } ,
+  {
+    "id": 40,
+    "symbol": "Zr",
+    "name": "Zircônio",
+    "atomicMass": 91.224,
+    "atomicWeight": [ 2, 8, 18, 10, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 4, 5 ],
+    "formula": [ "Zr" ]
+  } ,
+  {
+    "id": 41,
+    "symbol": "Nb",
+    "name": "Nióbio",
+    "atomicMass": 92.906,
+    "atomicWeight": [ 2, 8, 18, 12, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 5, 5 ],
+    "formula": [ "Nb" ]
+  } ,
+  {
+    "id": 42,
+    "symbol": "Mo",
+    "name": "Molibdênio",
+    "atomicMass": 95.95,
+    "atomicWeight": [ 2, 8, 18, 13, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 6, 5 ],
+    "formula": [ "Mo" ]
+  } ,
+  {
+    "id": 43,
+    "symbol": "Tc",
+    "name": "Tecnécio",
+    "atomicMass": 98,
+    "atomicWeight": [ 2, 8, 18, 13, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 7, 5 ],
+    "formula": [ "Tc" ]
+  } ,
+  {
+    "id": 44,
+    "symbol": "Ru",
+    "name": "Rutênio",
+    "atomicMass": 101.07,
+    "atomicWeight": [ 2, 8, 18, 15, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 8, 5 ],
+    "formula": [ "Ru" ]
+  } ,
+  {
+    "id": 45,
+    "symbol": "Rh",
+    "name": "Ródio",
+    "atomicMass": 102.91,
+    "atomicWeight": [ 2, 8, 18, 16, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 9, 5 ],
+    "formula": [ "Rh" ]
+  } ,
+  {
+    "id": 46,
+    "symbol": "Pd",
+    "name": "Paládio",
+    "atomicMass": 106.42,
+    "atomicWeight": [ 2, 8, 18, 18 ],
+    "family": "Metal_de_Transição",
+    "position": [ 10, 5 ],
+    "formula": [ "Pd" ]
+  } ,
+  {
+    "id": 47,
+    "symbol": "Ag",
+    "name": "Prata",
+    "atomicMass": 107.87,
+    "atomicWeight": [ 2, 8, 18, 18, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 11, 5 ],
+    "formula": [ "Ag" ]
+  } ,
+  {
+    "id": 48,
+    "symbol": "Cd",
+    "name": "Cádmio",
+    "atomicMass": 112.41,
+    "atomicWeight": [ 2, 8, 18, 18, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 12, 5 ],
+    "formula": [ "Cd" ]
+  } ,
+  {
+    "id": 49,
+    "symbol": "In",
+    "name": "Ìndio",
+    "atomicMass": 114.82,
+    "atomicWeight": [ 2, 8, 18, 18, 3 ],
+    "family": "Metal_Representativo",
+    "position": [ 13, 5 ],
+    "formula": [ "In" ]
+  } ,
+  {
+    "id": 50,
+    "symbol": "Sn",
+    "name": "Eshotan",
+    "atomicMass": 204.38,
+    "atomicWeight": [ 2, 8, 18, 18, 4 ],
+    "family": "Metal_Representativo",
+    "position": [ 14, 5 ],
+    "formula": [ "Sn" ]
+  } ,
+  {
+    "id": 51,
+    "symbol": "Sb",
+    "name": "Antimônio",
+    "atomicMass": 121.76,
+    "atomicWeight": [ 2, 8, 18, 18, 5 ],
+    "family": "Semimetal",
+    "position": [ 15, 5 ],
+    "formula": [ "Sb" ]
+  } ,
+  {
+    "id": 52,
+    "symbol": "Te",
+    "name": "Telúrio",
+    "atomicMass": 127.6,
+    "atomicWeight": [ 2, 8, 18, 18, 6 ],
+    "family": "Semimetal",
+    "position": [ 16, 5 ],
+    "formula": [ "Te" ]
+  } ,
+  {
+    "id": 53,
+    "symbol": "I",
+    "name": "Iodo",
+    "atomicMass": 126.9,
+    "atomicWeight": [ 2, 8, 18, 18, 7 ],
+    "family": "Não_Metal",
+    "position": [ 17, 5 ],
+    "formula": [ "I" ]
+  } ,
+  {
+    "id": 54,
+    "symbol": "Xe",
+    "name": "Xenônio",
+    "atomicMass": 131.29,
+    "atomicWeight": [ 2, 8, 18, 18, 8 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 5 ],
+    "formula": [ "Xe" ]
+  } ,
+  {
+    "id": 55,
+    "symbol": "Cs",
+    "name": "Césio",
+    "atomicMass": 132.91,
+    "atomicWeight": [ 2, 8, 18, 18, 8, 1 ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 6 ],
+    "formula": [ "Cs" ]
+  } ,
+  {
+    "id": 56,
+    "symbol": "Ba",
+    "name": "Bário",
+    "atomicMass": 137.33,
+    "atomicWeight": [ 2, 8, 18, 18, 8, 2 ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 6 ],
+    "formula": [ "Ba" ]
+  } ,
+  {
+    "id": 57,
+    "symbol": "La",
+    "name": "Lantânio",
+    "atomicMass": 138.91,
+    "atomicWeight": [ 2, 8, 18, 18, 9, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 4, 9 ],
+    "formula": [ "La" ]
+  } ,
+  {
+    "id": 58,
+    "symbol": "Ce",
+    "name": "Cério",
+    "atomicMass": 140.12,
+    "atomicWeight": [ 2, 8, 18, 19, 9, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 5, 9 ],
+    "formula": [ "Ce" ]
+  } ,
+  {
+    "id": 59,
+    "symbol": "Pr",
+    "name": "Praseodímio",
+    "atomicMass": 140.91,
+    "atomicWeight": [ 2, 8, 18, 21, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 6, 9 ],
+    "formula": [ "Pr" ]
+  } ,
+  {
+    "id": 60,
+    "symbol": "Nd",
+    "name": "Neodímio",
+    "atomicMass": 144.24,
+    "atomicWeight": [ 2, 8, 18, 22, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 7, 9 ],
+    "formula": [ "Nd" ]
+  } ,
+  {
+    "id": 61,
+    "symbol": "Pm",
+    "name": "Promécio",
+    "atomicMass": 144.24,
+    "atomicWeight": [ 2, 8, 18, 23, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 8, 9 ],
+    "formula": [ "Pm" ]
+  } ,
+  {
+    "id": 62,
+    "symbol": "Sm",
+    "name": "Samário",
+    "atomicMass": 150.36,
+    "atomicWeight": [ 2, 8, 18, 24, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 9, 9 ],
+    "formula": [ "Sm" ]
+  } ,
+  {
+    "id": 63,
+    "symbol": "Eu",
+    "name": "Európio",
+    "atomicMass": 151.96,
+    "atomicWeight": [ 2, 8, 18, 25, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 10, 9 ],
+    "formula": [ "Eu" ]
+  } ,
+  {
+    "id": 64,
+    "symbol": "Gd",
+    "name": "Gadolínio",
+    "atomicMass": 157.25,
+    "atomicWeight": [ 2, 8, 18, 25, 9, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 11, 9 ],
+    "formula": [ "Gd" ]
+  } ,
+  {
+    "id": 65,
+    "symbol": "Tb",
+    "name": "Térbio",
+    "atomicMass": 158.93,
+    "atomicWeight": [ 2, 8, 18, 27, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 12, 9 ],
+    "formula": [ "Tb" ]
+  } ,
+  {
+    "id": 66,
+    "symbol": "Dy",
+    "name": "Disprósio",
+    "atomicMass": 162.5,
+    "atomicWeight": [ 2, 8, 18, 28, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 13, 9 ],
+    "formula": [ "Dy" ]
+  } ,
+  {
+    "id": 67,
+    "symbol": "Ho",
+    "name": "Hólmio",
+    "atomicMass": 164.93,
+    "atomicWeight": [ 2, 8, 18, 29, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 14, 9 ],
+    "formula": [ "Ho" ]
+  } ,
+  {
+    "id": 68,
+    "symbol": "Er",
+    "name": "Érbio",
+    "atomicMass": 167.26,
+    "atomicWeight": [ 2, 8, 18, 30, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 15, 9 ],
+    "formula": [ "Er" ]
+  } ,
+  {
+    "id": 69,
+    "symbol": "Tm",
+    "name": "Túlio",
+    "atomicMass": 168.93,
+    "atomicWeight": [ 2, 8, 18, 31, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 16, 9 ],
+    "formula": [ "Tm" ]
+  } ,
+  {
+    "id": 70,
+    "symbol": "Yb",
+    "name": "Íterbio",
+    "atomicMass": 173.05,
+    "atomicWeight": [ 2, 8, 18, 32, 8, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 17, 9 ],
+    "formula": [ "Yb" ]
+  } ,
+  {
+    "id": 71,
+    "symbol": "Lu",
+    "name": "Lutétio",
+    "atomicMass": 174.97,
+    "atomicWeight": [ 2, 8, 18, 32, 9, 2 ],
+    "family": "Lantanídeos",
+    "position": [ 18, 9 ],
+    "formula": [ "Lu" ]
+  } ,
+  {
+    "id": 72,
+    "symbol": "Hf",
+    "name": "Háfnio",
+    "atomicMass": 178.49,
+    "atomicWeight": [ 2, 8, 18, 32, 10, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 4, 6 ],
+    "formula": [ "Hf" ]
+  } ,
+  {
+    "id": 73,
+    "symbol": "Ta",
+    "name": "Tantálo",
+    "atomicMass": 180.95,
+    "atomicWeight": [ 2, 8, 18, 32, 11, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 5, 6 ],
+    "formula": [ "Ta" ]
+  } ,
+  {
+    "id": 74,
+    "symbol": "W",
+    "name": "Tungstênio",
+    "atomicMass": 183.84,
+    "atomicWeight": [ 2, 8, 18, 32, 12, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 6, 6 ],
+    "formula": [ "W" ]
+  } ,
+  {
+    "id": 75,
+    "symbol": "Re",
+    "name": "Réio",
+    "atomicMass": 186.21,
+    "atomicWeight": [ 2, 8, 18, 32, 13, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 7, 6 ],
+    "formula": [ "Re" ]
+  } ,
+  {
+    "id": 76,
+    "symbol": "Os",
+    "name": "Ósmio",
+    "atomicMass": 190.23,
+    "atomicWeight": [ 2, 8, 18, 32, 14, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 8, 6 ],
+    "formula": [ "Os" ]
+  } ,
+  {
+    "id": 77,
+    "symbol": "Ir",
+    "name": "Irídio",
+    "atomicMass": 192.22,
+    "atomicWeight": [ 2, 8, 18, 32, 15, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 9, 6 ],
+    "formula": [ "Ir" ]
+  } ,
+  {
+    "id": 78,
+    "symbol": "Pt",
+    "name": "Platínio",
+    "atomicMass": 195.08,
+    "atomicWeight": [ 2, 8, 18, 32, 17, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 10, 6 ],
+    "formula": [ "Pt" ]
+  } ,
+  {
+    "id": 79,
+    "symbol": "Au",
+    "name": "Ouro",
+    "atomicMass": 196.97,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 1 ],
+    "family": "Metal_de_Transição",
+    "position": [ 11, 6 ],
+    "formula": [ "Au" ]
+  } ,
+  {
+    "id": 80,
+    "symbol": "Hg",
+    "name": "Mercúrio",
+    "atomicMass": 200.59,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 2 ],
+    "family": "Metal_de_Transição",
+    "position": [ 12, 6 ],
+    "formula": [ "Hg" ]
+  } ,
+  {
+    "id": 81,
+    "symbol": "Tl",
+    "name": "Tálio",
+    "atomicMass": 204.38,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 3 ],
+    "family": "Metal_Representativo",
+    "position": [ 13, 6 ],
+    "formula": [ "Tl" ]
+  } ,
+  {
+    "id": 82,
+    "symbol": "Pb",
+    "name": "Chumbo",
+    "atomicMass": 207.2,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 4 ],
+    "family": "Metal_Representativo",
+    "position": [ 14, 6 ],
+    "formula": [ "Pb" ]
+  } ,
+  {
+    "id": 83,
+    "symbol": "Bi",
+    "name": "Bismuto",
+    "atomicMass": 208.98,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 5 ],
+    "family": "Metal_Representativo",
+    "position": [ 15, 6 ],
+    "formula": [ "Bi" ]
+  } ,
+  {
+    "id": 84,
+    "symbol": "Po",
+    "name": "Polônio",
+    "atomicMass": 209,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 6 ],
+    "family": "Metal_Representativo",
+    "position": [ 16, 6 ],
+    "formula": [ "Po" ]
+  } ,
+  {
+    "id": 85,
+    "symbol": "At",
+    "name": "Astato",
+    "atomicMass": 210,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 7 ],
+    "family": "Semimetal",
+    "position": [ 17, 6 ],
+    "formula": [ "At" ]
+  } ,
+  {
+    "id": 86,
+    "symbol": "Rn",
+    "name": "Randônio",
+    "atomicMass": 222,
+    "atomicWeight": [ 2, 8, 18, 32, 18, 8 ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 6 ],
+    "formula": [ "Rn" ]
+  } ,
+  {
+    "id": 87,
+    "symbol": "Fr",
+    "name": "Fráncio",
+    "atomicMass": 223,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      18, 8,  1
+    ],
+    "family": "Metal_Alcalino",
+    "position": [ 1, 7 ],
+    "formula": [ "Fr" ]
+  } ,
+  {
+    "id": 88,
+    "symbol": "Ra",
+    "name": "Rádio",
+    "atomicMass": 226,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      18, 8,  2
+    ],
+    "family": "Metal_Alcalino-terroso",
+    "position": [ 2, 7 ],
+    "formula": [ "Ra" ]
+  } ,
+  {
+    "id": 89,
+    "symbol": "Ac",
+    "name": "Actínio",
+    "atomicMass": 227,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      18, 9,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 4, 10 ],
+    "formula": [ "Ac" ]
+  } ,
+  {
+    "id": 90,
+    "symbol": "Th",
+    "name": "Tório",
+    "atomicMass": 232.04,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      18, 10,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 5, 10 ],
+    "formula": [ "Th" ]
+  } ,
+  {
+    "id": 91,
+    "symbol": "Pa",
+    "name": "Protatínio",
+    "atomicMass": 231.04,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      20, 9,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 6, 10 ],
+    "formula": [ "Pa" ]
+  } ,
+  {
+    "id": 92,
+    "symbol": "U",
+    "name": "Urânio",
+    "atomicMass": 238.03,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      21, 9,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 7, 10 ],
+    "formula": [ "U" ]
+  } ,
+  {
+    "id": 93,
+    "symbol": "Np",
+    "name": "Neptúnio",
+    "atomicMass": 237,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      22, 9,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 8, 10 ],
+    "formula": [ "Np" ]
+  } ,
+  {
+    "id": 94,
+    "symbol": "Pu",
+    "name": "Plutônio",
+    "atomicMass": 244,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      24, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 9, 10 ],
+    "formula": [ "Pu" ]
+  } ,
+  {
+    "id": 95,
+    "symbol": "Am",
+    "name": "Amerício",
+    "atomicMass": 243,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      25, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 10, 10 ],
+    "formula": [ "Am" ]
+  } ,
+  {
+    "id": 96,
+    "symbol": "Cm",
+    "name": "Cúrio",
+    "atomicMass": 247,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      25, 9,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 11, 10 ],
+    "formula": [ "Cm" ]
+  } ,
+  {
+    "id": 97,
+    "symbol": "Bk",
+    "name": "Berquélio",
+    "atomicMass": 247,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      27, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 12, 10 ],
+    "formula": [ "Bk" ]
+  } ,
+  {
+    "id": 98,
+    "symbol": "Cf",
+    "name": "Califórnio",
+    "atomicMass": 251,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      28, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 13, 10 ],
+    "formula": [ "Cf" ]
+  } ,
+  {
+    "id": 99,
+    "symbol": "Es",
+    "name": "Einstênio",
+    "atomicMass": 252,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      29, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 14, 10 ],
+    "formula": [ "Es" ]
+  } ,
+  {
+    "id": 100,
+    "symbol": "Fm",
+    "name": "Férmio",
+    "atomicMass": 257,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      30, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 15, 10 ],
+    "formula": [ "Fm" ]
+  } ,
+  {
+    "id": 101,
+    "symbol": "Md",
+    "name": "Mendelévio",
+    "atomicMass": 258,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      31, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 16, 10 ],
+    "formula": [ "Md" ]
+  } ,
+  {
+    "id": 102,
+    "symbol": "No",
+    "name": "Nobélio",
+    "atomicMass": 259,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      32, 8,  2
+    ],
+    "family": "Actinídeos",
+    "position": [ 17, 10 ],
+    "formula": [ "No" ]
+  } ,
+  {
+    "id": 103,
+    "symbol": "Lr",
+    "name": "Laurêncio",
+    "atomicMass": 266,
+    "atomicWeight": [
+      2, 8, 18, 32,
+      32, 8,  3
+    ],
+    "family": "Actinídeos",
+    "position": [ 18, 10 ],
+    "formula": [ "Lr" ]
+  } ,
+  {
+    "id": 104,
+    "symbol": "Rf",
+    "name": "Rutherfórdio",
+    "atomicMass": 267,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 10,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 4, 7 ],
+    "formula": [ "Rf" ]
+  } ,
+  {
+    "id": 105,
+    "symbol": "Db",
+    "name": "Dúbnio",
+    "atomicMass": 268,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 11,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 5, 7 ],
+    "formula": [ "Db" ]
+  } ,
+  {
+    "id": 106,
+    "symbol": "Sg",
+    "name": "Seabórgio",
+    "atomicMass": 269,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 12,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 6, 7 ],
+    "formula": [ "Sg" ]
+  } ,
+  {
+    "id": 107,
+    "symbol": "Bh",
+    "name": "Bóhrio",
+    "atomicMass": 270,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 13,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 7, 7 ],
+    "formula": [ "Bh" ]
+  } ,
+  {
+    "id": 108,
+    "symbol": "Hs",
+    "name": "Hássio",
+    "atomicMass": 277,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 14,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 8, 7 ],
+    "formula": [ "Hs" ]
+  } ,
+  {
+    "id": 109,
+    "symbol": "Mt",
+    "name": "Meitnério",
+    "atomicMass": 278,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 15,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 9, 7 ],
+    "formula": [ "Mt" ]
+  } ,
+  {
+    "id": 110,
+    "symbol": "Ds",
+    "name": "Darmstád io",
+    "atomicMass": 281,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 17,  1
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 10, 7 ],
+    "formula": [ "Ds" ]
+  } ,
+  {
+    "id": 111,
+    "symbol": "Rg",
+    "name": "Roentgênio",
+    "atomicMass": 282,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 17,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 11, 7 ],
+    "formula": [ "Rg" ]
+  } ,
+  {
+    "id": 112,
+    "symbol": "Cn",
+    "name": "Copernício",
+    "atomicMass": 282,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  2
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 12, 7 ],
+    "formula": [ "Cn" ]
+  } ,
+  {
+    "id": 113,
+    "symbol": "Nh",
+    "name": "Nihônio",
+    "atomicMass": 286,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  3
+    ],
+    "family": "Metal_de_Transição",
+    "position": [ 13, 7 ],
+    "formula": [ "Nh" ]
+  } ,
+  {
+    "id": 114,
+    "symbol": "Fl",
+    "name": "Fleróvio",
+    "atomicMass": 289,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  4
+    ],
+    "family": "Metal_Representativo",
+    "position": [ 14, 7 ],
+    "formula": [ "Fl" ]
+  } ,
+  {
+    "id": 115,
+    "symbol": "Mc",
+    "name": "Moscóvio",
+    "atomicMass": 290,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  5
+    ],
+    "family": "Metal_Representativo",
+    "position": [ 15, 7 ],
+    "formula": [ "Mc" ]
+  } ,
+  {
+    "id": 116,
+    "symbol": "Lv",
+    "name": "Livermório",
+    "atomicMass": 293,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  6
+    ],
+    "family": "Metal_Representativo",
+    "position": [ 16, 7 ],
+    "formula": [ "Lv" ]
+  } ,
+  {
+    "id": 117,
+    "symbol": "Ts",
+    "name": "Tennesso",
+    "atomicMass": 294,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  7
+    ],
+    "family": "Semimetal",
+    "position": [ 17, 7 ],
+    "formula": [ "Ts" ]
+  } ,
+  {
+    "id": 118,
+    "symbol": "Og",
+    "name": "Oganessônio",
+    "atomicMass": 294,
+    "atomicWeight": [
+      2,  8, 18, 32,
+      32, 18,  8
+    ],
+    "family": "Gás_Nobre",
+    "position": [ 18, 7 ],
+    "formula": [ "Og" ]
+  }
+
+]

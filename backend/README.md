@@ -22,3 +22,4 @@ To install the dependencies, run:
 # Technologies
 - Express;
 - TypeORM
+- MySQL;

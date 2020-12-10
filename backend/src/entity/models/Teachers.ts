@@ -19,11 +19,11 @@ export default class Teachers {
   userpassword: string
 
   @Column()
-  schools_schedule: Array<[{}]>
+  schools_schedule: string
 
   @Column()
   bottles: number
 
   @Column()
-  my_articles: Array<[{}]>
+  my_articles: string
 }

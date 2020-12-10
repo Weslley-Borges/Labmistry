@@ -8,6 +8,10 @@ import RegisterStudent from './pages/registerStudent'
 import RegisterTeacher from './pages/registerTeacher'
 import TeacherProfile from './pages/teacherProfile'
 
+import PeriodicTable from './pages/periodicTable'
+
+
+
 export default function Routes() {
 	return (
 		<BrowserRouter>
@@ -18,6 +22,8 @@ export default function Routes() {
 				<Route path="/create/student" exact component={RegisterStudent}/>
 				<Route path="/create/teacher" exact component={RegisterTeacher}/>
 				<Route path="/user/teacher" exact component={TeacherProfile}/>
+
+				<Route path="/periodc" exact component={PeriodicTable}/>
       </Switch>
 		</BrowserRouter>
 )}

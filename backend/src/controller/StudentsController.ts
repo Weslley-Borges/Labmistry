@@ -42,6 +42,9 @@ export default{
 			school
 		} = request.body
 		
+		const userpassword_Modified = cryptPassowrd(userpassword)
+		sleep(4000)
+		
 		const studentsRepository = getRepository(Student)
 	
 		//Cria os dados no banco de dados
@@ -58,4 +61,25 @@ export default{
 		return response.status(201).json(student)
 	 }
 	 
+}
+
+const bcrypt = require("bcrypt")
+
+function cryptPassowrd(password: any){
+	bcrypt.genSalt(1, function(err: any, salt: any) {
+		if (err) return console.log(err)
+
+		bcrypt.hash(password, salt, (err: any, hash: any) => {
+			if (err != undefined) return console.log(err)
+			return String(hash)
+		})
+	})
+}
+
+function sleep(milliseconds: Number) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now()
+  } while (currentDate - date < milliseconds);
 }
