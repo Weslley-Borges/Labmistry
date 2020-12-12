@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Landing from './pages/landing'
+import LandingChat from './pages/chat/landingChat'
 import Login from './pages/login'
 import ChooseRegister from './pages/chooseRegister'
 import RegisterStudent from './pages/registerStudent'
@@ -24,6 +25,7 @@ export default function Routes() {
 				<Route path="/user/teacher" exact component={TeacherProfile}/>
 
 				<Route path="/periodc" exact component={PeriodicTable}/>
+				<Route path="/chat" exact component={LandingChat}/>
       </Switch>
 		</BrowserRouter>
 )}
