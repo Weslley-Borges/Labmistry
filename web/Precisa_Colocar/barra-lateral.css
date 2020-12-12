@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+
+    background: #9500da;
+}
+
+div#barra-lateral{
+    width: 150px;
+    height: 900px;
+
+    background: #AC67F0;
+
+    justify-content: space-between;
+
+    position: fixed;
+}
+
+form{
+    padding-top: 50px;
+    padding-left: 380px;
+
+    background: #7906BF 78%;
+
+}
+
+fieldset{
+    border: 0px;
+}
+
+form fieldset legend{
+    padding-bottom: 50px;
+}
+
+form fieldset label{
+    padding-bottom: 20px;
+}
+
+input{
+    width: 250px;
+}

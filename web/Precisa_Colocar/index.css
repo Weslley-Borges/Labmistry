@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+button#entrar-proxima-pagina h1{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    
+    margin: 0px;
+}
+
+div#div-extra-frase-de-efeito{
+    width: 1350px;
+}
+
+div#frase-de-efeito{
+    width: 850px;
+    height: auto;
+
+    padding-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: center;
+}
+
+
+
+div#frase-de-efeito h1{
+    font-size: 40px;
+}
+
+h2{
+    height: auto;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+p{
+    line-height: 150%;
+    width: 586px;
+    height: auto;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+div#organizar{
+    width: 586px;
+    padding-left: 50px;
+
+    display: inline-block;
+}
+
+div#organizar2{
+    max-width: 586px;
+    padding-left: 50px;
+
+    display: inline-block;
+}
+
+div#organizar3{
+    max-width: 586px;
+    padding-left: 50px;
+
+    display: inline-block;
+}
+
+div#organizar4{
+    max-width: 586px;
+    padding-left: 50px;
+
+    display: inline-block;
+}
+
+div#organizar5{
+    max-width: 586px;
+    padding-left: 50px;
+
+    display: inline-block;
+}
+
+div#participe{
+    width: 650px;
+    padding-left: 50px;
+}
+
+div#participe h2{
+    margin: 0px;
+}
+
+div#final{
+    background: #585858;
+
+    width: 920px;
+    height: auto;
+
+    border-radius: 10px;
+
+    padding: 80px;
+
+    margin-left: 114px;
+    margin-right: 144px; 
+}
+
+div#div-extra-final{
+    padding-bottom: 100px;
+}

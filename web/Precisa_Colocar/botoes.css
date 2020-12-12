@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/* INDEX HTML */
+
+div#botoes{
+    width: 600px;
+    height: auto;
+    padding-left: 400px;
+    left: 535px;
+    top: 634px;
+    margin: 0px;
+
+    text-align: left;
+    align-items: initial;
+}
+
+div#botaoentrar{
+    width: 250px;
+
+    display: inline-block;
+}
+
+div#botaocriar{
+    width: 250px;
+
+    display: inline-block;
+}
+
+div#botaoparticipa{
+    width: 250px;
+
+    display: inline-block;
+}
+
+button{
+    border-radius: 200px;
+}
+
+button#entrar{
+    width: 250px;
+    height: 65px;
+
+    background: #CCDE00;
+    border-radius: 200px;
+
+    cursor: pointer;
+    text-align: initial;
+
+    background-image: url(../images/entrar.svg);
+    background-repeat: no-repeat;
+}
+
+button#entrar span{  
+    padding: 20px; 
+    padding-left: 60px; 
+    left: 87px;
+    top: 278px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+
+    color: #000000;
+}
+
+button#criar{
+    width: 250px;
+    height: 65px;
+    padding: 0px;
+    padding-left: 40px;
+    
+    background: #00EB42;
+    
+    cursor: pointer;
+    text-align: initial;
+    
+    background-image: url(../images/mais.svg);
+    background-repeat: no-repeat;
+}
+
+button#criar span{  
+    padding: 20px; 
+    padding-left: 60px; 
+    left: 87px;
+    top: 278px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+
+    color: #000000;
+}
+
+button#participa{
+    width: 300px;
+    height: 65px;
+    margin-left: 60px !important;
+    
+    background: #C4342B;
+    
+    cursor: pointer;
+    text-align: initial;
+    
+    background-image: url(../images/mensagens.svg);
+    background-repeat: no-repeat;
+}
+
+button#participa span{
+    padding: 20px; 
+    padding-left: 50px; 
+    left: 87px;
+    top: 278px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+
+    color: #000000;
+}
+
+/*  ENTRAR EM SALA HTML*/
+
+.entrar-botao{
+    width: 120px;
+    height: 40px;
+
+    background-color: #00EB42;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url(../images/entrar-menor.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.entrar-botao span{
+    padding-right: 15px;
+}
