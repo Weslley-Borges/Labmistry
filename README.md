@@ -14,7 +14,6 @@ Content table
    * [Starting](#Starting)
       * [Prerequisites](#Prerequisites)
       * [Installing](#Installing)
-      * [Running](#Running)
    * [Technologies](#Technologies)
    
 <!--te-->
@@ -30,8 +29,6 @@ To run this project, be either in development or production, you'll only need to
 ## Installing
 Cloning the repository:
 <code>$ git clone https://github.com/Weslley-Borges/Labmistry</code>
-## Running
-<code>$ yarn start</code>
 
 # Technologies
 - [ReactJS](https://reactjs.org/);
