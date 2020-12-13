@@ -31,23 +31,24 @@ export default{
 		}
 	},
 
+
 	// Registra um novo aluno
   async create(request: Request, response: Response) {
 		//Desestruturamos o rquest.body
 		const {
 			username,
 			email,
-			userpassword,
+			userpassword_init,
 			state,
 			school
 		} = request.body
+		//Encriptamos a senha do usuário
+		const bcrypt = require("bcryptjs")
+		const salt = bcrypt.genSaltSync(10) // Generate Salt
+		const userpassword = bcrypt.hashSync(String(userpassword_init), salt) // Hash Password
 		
-		const userpassword_Modified = cryptPassowrd(userpassword)
-		sleep(4000)
-		
-		const studentsRepository = getRepository(Student)
-	
 		//Cria os dados no banco de dados
+		const studentsRepository = getRepository(Student)
 		const student = studentsRepository.create({
 			username,
 			email,
@@ -55,31 +56,8 @@ export default{
 			state,
 			school
 		})
-	
 		//Salva no banco de dados
 		await studentsRepository.save(student)
 		return response.status(201).json(student)
 	 }
-	 
-}
-
-const bcrypt = require("bcrypt")
-
-function cryptPassowrd(password: any){
-	bcrypt.genSalt(1, function(err: any, salt: any) {
-		if (err) return console.log(err)
-
-		bcrypt.hash(password, salt, (err: any, hash: any) => {
-			if (err != undefined) return console.log(err)
-			return String(hash)
-		})
-	})
-}
-
-function sleep(milliseconds: Number) {
-  const date = Date.now();
-  let currentDate = null;
-  do {
-    currentDate = Date.now()
-  } while (currentDate - date < milliseconds);
 }
