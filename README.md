@@ -38,3 +38,5 @@ Cloning the repository:
 - [MySQL](https://www.mysql.com/);
 - [Typescript](https://www.typescriptlang.org/a);
 - SASS;
+- Yup
+- BcryptJS

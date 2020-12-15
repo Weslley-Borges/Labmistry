@@ -1,6 +1,8 @@
 import express from "express"
-import './database/connection'
 import routes from './routes'
+import 'express-async-errors'
+
+import './database/connection'
 
 /* 
 	src/server.ts, 11/18/2020
