@@ -27,7 +27,7 @@ export default function LandingChat() {
 					<Link to="/" className="button">
 						<ImEnter color="#FFF" className="image"/>Entrar na sala
 					</Link>
-					<Link to="/" className="button">
+					<Link to="/chat/create" className="button">
 						<FaPlus color="#FFF" className="image"/>Criar uma sala
 					</Link>
 					<Link to="/" className="button">

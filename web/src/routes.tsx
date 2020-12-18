@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Landing from './pages/landing'
 import LandingChat from './pages/chat/landingChat'
+import NewChat from './pages/chat/newChat'
 import Login from './pages/login'
 import ChooseRegister from './pages/chooseRegister'
 import RegisterStudent from './pages/registerStudent'
@@ -26,6 +27,7 @@ export default function Routes() {
 
 				<Route path="/periodc" exact component={PeriodicTable}/>
 				<Route path="/chat" exact component={LandingChat}/>
+				<Route path="/chat/create" exact component={NewChat}/>
       </Switch>
 		</BrowserRouter>
 )}
