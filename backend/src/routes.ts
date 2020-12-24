@@ -10,7 +10,7 @@ import StudentsControllers from './controller/StudentsController'
 const routes = Router()
 routes.get('/getting', StudentsControllers.index)
 routes.get('/getting/:id', StudentsControllers.show)
-routes.post('/creates', StudentsControllers.create)
+routes.post('/createStudent', StudentsControllers.create)
 
 
 export default routes
