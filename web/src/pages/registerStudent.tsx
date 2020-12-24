@@ -53,9 +53,15 @@ export default function RegisterStudent(){
 		e.preventDefault()
 
 		if(password === confirmPassword){
-			const data = { name, email, password, geoState, school }
+			const data = { 
+				"username":	name, 
+				"email": email, 
+				"userpassword": password, 
+				"state": geoState, 
+				"schools": school 
+			}
 
-			await API.post('createStudents', data)
+			await API.post('/createStudent', data)
 			alert("Usuário cadastrado com sucesso")
 
 			history.push('/')
