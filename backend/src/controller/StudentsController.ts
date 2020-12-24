@@ -22,6 +22,8 @@ export default{
 		response.status(200).json(students_view.renderMany(students))
 	},
 
+
+	
 	// Lista um aluno do banco de dados, a partir do ID
 	async show(request: Request, response: Response) {
 		const {	id } = request.params
