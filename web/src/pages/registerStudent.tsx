@@ -1,13 +1,16 @@
 import React, { useState, FormEvent } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import warningIcon from "../assets/images/icons/warning.svg"
 import PageHeader from '../components/pageHeader'
 import Select from '../components/select'
 import InputAnimated from '../components/inputAnimated'
+import API from '../services/api'
 
 import GeoStates from '../utils/states.json'
 import Schools from '../utils/schools.json'
 import '../assets/styles/pages/register.scss'
+
 
 /* 
 	src/pages/registerStudent.tsx, 11/18/2020
@@ -16,6 +19,9 @@ import '../assets/styles/pages/register.scss'
 */
 
 export default function RegisterStudent(){
+
+	const history = useHistory()
+
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [geoState, setGeoState] = useState('')
@@ -43,26 +49,19 @@ export default function RegisterStudent(){
 		Na função handleRegister, os dados do formulário são recebidos 
 		e avaliados, depois são mostrados em um alert, com os dados do registro (por enquanto).
 	*/
-	function handleRegister(e: FormEvent){
+	async function handleRegister(e: FormEvent){
 		e.preventDefault()
+
 		if(password === confirmPassword){
-			const registerValues = {
-				'Name':name, 
-				'Email':email, 
-				'State': geoState,
-				'School': school,
-				'Password':password, 
-				'ConfirmPassword':confirmPassword
-			}
-			return alert(`
-			Informações do aluno:
-			Nome: ${registerValues.Name}
-			Email: ${registerValues.Email}
-			Estado: ${registerValues.State}
-			Escola: ${registerValues.School}`
-			)
+			const data = { name, email, password, geoState, school }
+
+			await API.post('createStudents', data)
+			alert("Usuário cadastrado com sucesso")
+
+			history.push('/')
 		}
-		alert('Ocorreu um erro:\nAs senhas devem ser iguais')}
+		alert('Ocorreu um erro:\nAs senhas devem ser iguais')
+	}
 
 	return(
 		<div className="container page-register">
