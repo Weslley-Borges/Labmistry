@@ -45,16 +45,16 @@ export class Students1606523675312 implements MigrationInterface {
 					name: 'teachers_id',
 					type: 'json'
 				}
-			],
-			foreignKeys: [
-				{
-					name: "my_teachers",
-					columnNames: ['teachers_id'],
-					referencedTableName: 'teachers',
-					referencedColumnNames: ['id'],
-					onUpdate: 'CASCADE'
-				}
 			]
+			// foreignKeys: [
+			// 	{
+			// 		name: "my_teachers",
+			// 		columnNames: ['teachers_id'],
+			// 		referencedTableName: 'teachers',
+			// 		referencedColumnNames: ['id'],
+			// 		onUpdate: 'CASCADE'
+			// 	}
+			// ]
 		}))
   }
 

@@ -1,5 +1,4 @@
 import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinColumn } from 'typeorm'
-import Teachers from './Teachers'
 
 @Entity('students')
 export default class Student {
@@ -24,8 +23,4 @@ export default class Student {
 
   @Column()
   bottles: number
-
-  @ManyToMany(() => Teachers)
-  @JoinColumn({name: 'teachers_id'})
-  my_teachers: Teachers[]
 }
