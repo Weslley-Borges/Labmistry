@@ -53,18 +53,20 @@ export default function RegisterStudent(){
 		e.preventDefault()
 
 		if(password === confirmPassword){
+			
 			const data = { 
-				"username":	name, 
-				"email": email, 
-				"userpassword": password, 
-				"state": geoState, 
-				"schools": school 
+				name, 
+				email, 
+				password, 
+				geoState, 
+				school 
 			}
-
-			await API.post('/createStudent', data)
+			console.log(data)
+			await API.post('createStudent', data)
+			
 			alert("Usuário cadastrado com sucesso")
 
-			history.push('/')
+			return history.push('/')
 		}
 		alert('Ocorreu um erro:\nAs senhas devem ser iguais')
 	}
