@@ -55,11 +55,11 @@ export default function RegisterStudent(){
 		if(password === confirmPassword){
 			
 			const data = { 
-				name, 
-				email, 
-				password, 
-				geoState, 
-				school 
+				"username": name, 
+				"email": email, 
+				"userpassword_init": password, 
+				"state": geoState, 
+				"school": school 
 			}
 			console.log(data)
 			await API.post('createStudent', data)
