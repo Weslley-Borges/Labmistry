@@ -1,6 +1,5 @@
 import React, { useState, FormEvent } from 'react'
 
-import warningIcon from "../assets/images/icons/warning.svg"
 import PageHeader from '../components/pageHeader'
 import Select from '../components/select'
 import InputAnimated from '../components/inputAnimated'
@@ -9,11 +8,11 @@ import Textarea from '../components/textarea'
 import GeoStates from '../utils/states.json'
 import Schools from '../utils/schools.json'
 import '../assets/styles/pages/register.scss'
+import { AiOutlineWarning } from 'react-icons/ai'
 
 /* 
-	src/pages/registerTeacher.tsx, 11/18/2020
-	Author: Weslley Borges dos Santos
-	Este arquivo é o frontend da página de registro do professor
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Página de registro do professor
 */
 
 export default function RegisterTeacher(){
@@ -27,24 +26,23 @@ export default function RegisterTeacher(){
 	const [confirmPassword, setConfirmPassword] = useState('')
 
 	/*
-		A constante 'states' recebe todos os estados do arquivo
-		src/utils/states.json e depois retorna um array de 
-		objetos com valor e uma label, para servir no select de estados
+		Recebe todos os dados e retorna um array de
+		objetos para usar no select de estados
 	*/
 	const states = GeoStates.map((state) => {
 		return( {value: state.name, label: state.name} )
 	})
+
 	/*
-		A variável 'getSchools' recebe todas as escolas cujo o estado seja
-		igual ao valor do select. A variável 'schools' envia um array de
-		objetos para ser usado no select de escolas
+		Recebe todas as escolas cujo o nome do estado seja igual a geoState
+		e retorna um array de objetos com os dados dessas escolas
 	*/
 	let getSchools:any = Schools.filter( school => school.state === geoState)
 	let schools = getSchools.map( (school:any) => { return( {value: school.name, label: school.name} )})
 
 	/*
-		Na função handleRegister, os dados do formulário são recebidos 
-		e avaliados, depois são mostrados em um alert, com os dados do registro (por enquanto).
+		Os dados do formulário são recebidos e avaliados, depois são 
+		mostrados em um alert, com os dados do registro (por enquanto).
 	*/
 	function handleRegister(e: FormEvent){
 		e.preventDefault()
@@ -136,7 +134,7 @@ export default function RegisterTeacher(){
 					
 					<footer>
 						<p>
-							<img src={warningIcon} alt="Aviso Importante" />
+							<AiOutlineWarning id='warning_icon'/>
 							Importante <br />
 							Preencha todos os dados
 						</p>
