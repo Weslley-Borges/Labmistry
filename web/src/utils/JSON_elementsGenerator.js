@@ -1,3 +1,8 @@
+/* 
+	30/11/2020 - Author: Weslley Borges dos Santos
+	Script para gerar o JSON do arquivo elements.json
+*/
+
 const arrayElements = [
   [1, 'H', 'Hidrogênio', 1.008, [1], 'Não_Metal', 1, 1],
   [2, 'He', 'Hélio', 4.0026, [2], 'Gás_Nobre', 18, 1],

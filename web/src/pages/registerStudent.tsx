@@ -1,11 +1,11 @@
 import React, { useState, FormEvent } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import warningIcon from "../assets/images/icons/warning.svg"
+import { AiOutlineWarning } from 'react-icons/ai'
 import PageHeader from '../components/pageHeader'
 import Select from '../components/select'
 import InputAnimated from '../components/inputAnimated'
-import API from '../services/api'
+import validateRegister from '../services/microservices/validate_userRegister'
 
 import GeoStates from '../utils/states.json'
 import Schools from '../utils/schools.json'
@@ -30,45 +30,35 @@ export default function RegisterStudent(){
 	const [confirmPassword, setConfirmPassword] = useState('')
 
 	/*
-		A constante 'states' recebe todos os estados do arquivo
-		src/utils/states.json e depois retorna um array de 
-		objetos com valor e uma label, para servir no select de estados
+		Recebe todos os estados e retorna um array de
+		objetos para usar no select de estados
 	*/
 	const states = GeoStates.map((state) => {
 		return( {value: state.name, label: state.name} )
 	})
 	/*
-		A variável 'getSchools' recebe todas as escolas cujo o estado seja
-		igual ao valor do select. A variável 'schools' envia um array de
-		objetos para ser usado no select de escolas
+		Recebe todas as escolas cujo o nome do estado seja igual a geoState
+		e retorna um array de objetos com os dados dessas escolas
 	*/
 	let getSchools:any = Schools.filter( school => school.state === geoState)
 	let schools = getSchools.map( (school:any) => { return( {value: school.name, label: school.name} )})
 
-	/*
-		Na função handleRegister, os dados do formulário são recebidos 
-		e avaliados, depois são mostrados em um alert, com os dados do registro (por enquanto).
-	*/
 	async function handleRegister(e: FormEvent){
+		//	Os dados serão avaliados e enviados para o Backend
+		//	através do microservice validate_register
 		e.preventDefault()
-
-		if(password === confirmPassword){
-			
-			const data = { 
-				"username": name, 
-				"email": email, 
-				"userpassword_init": password, 
-				"state": geoState, 
-				"school": school 
-			}
-			console.log(data)
-			await API.post('createStudent', data)
-			
-			alert("Usuário cadastrado com sucesso")
-
-			return history.push('/')
+		const data = {
+			"username": name,
+			"email": email,
+			"password": password,
+			"confirmPassword": confirmPassword,
+			"state": geoState,
+			"school": school
 		}
-		alert('Ocorreu um erro:\nAs senhas devem ser iguais')
+		const result = await validateRegister("Student", data)
+		if (result == true) {
+			history.push('/')
+		}
 	}
 
 	return(
@@ -126,7 +116,7 @@ export default function RegisterStudent(){
 					
 					<footer>
 						<p>
-							<img src={warningIcon} alt="Aviso Importante" />
+							<AiOutlineWarning id='warning_icon'/>
 							Importante <br />
 							Preencha todos os dados
 						</p>

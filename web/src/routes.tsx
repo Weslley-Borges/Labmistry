@@ -6,16 +6,18 @@ import Login from './pages/login'
 import ChooseRegister from './pages/chooseRegister'
 import RegisterStudent from './pages/registerStudent'
 import RegisterTeacher from './pages/registerTeacher'
-import TeacherProfile from './pages/teacherProfile'
 
 import PeriodicTable from './pages/periodicTable'
 
 import Home from './pages/user/home'
 
-
 import LandingChat from './pages/chat/landingChat'
 import NewChat from './pages/chat/newChat'
 
+/* 
+	13/11/2020 - Author: Weslley Borges dos Santos
+	Todas as rotas do frontend
+*/
 
 export default function Routes() {
 	return (
@@ -26,7 +28,6 @@ export default function Routes() {
 				<Route path="/create" exact component={ChooseRegister}/>
 				<Route path="/create/student" exact component={RegisterStudent}/>
 				<Route path="/create/teacher" exact component={RegisterTeacher}/>
-				<Route path="/user/teacher" exact component={TeacherProfile}/>
 
 				{/*Páginas principais (vão precisar da autenticação do usuário)*/}
 				<Route path="/home" exact component={Home}/>

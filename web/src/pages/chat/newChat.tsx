@@ -1,10 +1,10 @@
 import React, { useState, FormEvent } from 'react'
 
-import warningIcon from "../../assets/images/icons/warning.svg"
 import PageHeader from '../../components/pageHeader'
 
 import InputAnimated from '../../components/inputAnimated'
 import '../../assets/styles/pages/register.scss'
+import { AiOutlineWarning } from 'react-icons/ai'
 
 /* 
 	src/pages/registerTeacher.tsx, 12/17/2020
@@ -58,7 +58,7 @@ export default function NewChat(){
 					</fieldset>					
 					<footer>
 						<p>
-							<img src={warningIcon} alt="Aviso Importante" />
+							<AiOutlineWarning id='warning_icon'/>
 							Importante <br />
 							Preencha todos os dados
 						</p>

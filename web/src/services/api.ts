@@ -1,9 +1,8 @@
 import axios from 'axios'
 
 /* 
-	src/services/api.ts 12/23/2020
-	Author: Weslley Borges dos Santos
-	Conexão com a API Rest
+	23/12/2020 - Author: Weslley Borges dos Santos
+	Conexão com a API Rest (Backend)
 */
 
 const API = axios.create({
