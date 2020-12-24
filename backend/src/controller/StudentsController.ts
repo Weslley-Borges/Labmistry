@@ -1,15 +1,14 @@
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm'
-import Student from '../entity/models/Students'
+import Student from '../entities/Students'
 import students_view from '../views/students_view'
 import * as Yup from 'yup'
 
 const bcrypt = require("bcryptjs")
 
 /* 
-	src/controller/StudentsController,ts, 11/18/2020
-	Author: Weslley Borges dos Santos
-	Controller da tabela "students", aqui são as operações realizadas.
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Operações realizadas usando a tabela Students
 */
 
 export default{
@@ -22,8 +21,6 @@ export default{
 		response.status(200).json(students_view.renderMany(students))
 	},
 
-
-	
 	// Lista um aluno do banco de dados, a partir do ID
 	async show(request: Request, response: Response) {
 		const {	id } = request.params
@@ -38,9 +35,16 @@ export default{
 	},
 
 
-	// Registra um novo aluno
+	/*
+		--- Registro de aluno 
+		Primeiro, desestruturamos o request.body (que virá do frontend) em constantes,
+		depois, encriptamos a senha do usuário utilizando o método hashSync com 10 rodadas
+		de salt. Depois, validamos os dados que foram recebidos, para evitar erros na aplicação.
+		Aplica os dados no modelo da entidade de aluno (Student), e depois,salva no banco
+		de dados.
+	*/
   async create(request: Request, response: Response) {
-		//Desestruturamos o request.body
+
 		const {
 			username,
 			email,
@@ -48,19 +52,12 @@ export default{
 			state,
 			school
 		} = request.body
-		//Encriptamos a senha do usuário
+
 		const salt = bcrypt.genSaltSync(10) // Generate Salt
 		const userpassword = bcrypt.hashSync(String(userpassword_init), salt) // Hash Password
 
-		const data = {
-			username,
-			email,
-			userpassword,
-			state,
-			school
-		}
+		const data = { username, email, userpassword, state, school}
 
-		//Os dados serão validados
 		const schema = Yup.object().shape({
 			username: Yup.string().required(),
 			email: Yup.string().required().email(),
@@ -70,11 +67,9 @@ export default{
 		})
 		await schema.validate(data, {abortEarly: false})
 
-		//Registra os dados no banco de dados
 		const studentsRepository = getRepository(Student)
 		const student = studentsRepository.create(data)
 		
-		//Salva no banco de dados
 		await studentsRepository.save(student)
 		return response.status(201).json(student)
 	 }

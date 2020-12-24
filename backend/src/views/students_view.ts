@@ -1,4 +1,10 @@
-import Student from "../entity/models/Students"
+import Student from "../entities/Students"
+
+/* 
+	18/11/2020 - Author: Weslley Borges dos Santos
+  View da tabela de usuários, onde as informações
+  de cada usuário podem ser transmitidas para o Frontend
+*/
 
 export default {
   render(student: Student) {

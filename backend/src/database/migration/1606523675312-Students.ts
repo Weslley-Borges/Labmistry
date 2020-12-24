@@ -1,5 +1,10 @@
 import {MigrationInterface, QueryRunner,Table} from "typeorm";
 
+/* 
+	25/11/2020 - Author: Weslley Borges dos Santos
+	Migration da tabela Students
+*/
+
 export class Students1606523675312 implements MigrationInterface {
 
   public async up(queryRunner: QueryRunner): Promise<void> {

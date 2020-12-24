@@ -2,9 +2,8 @@ import { Router } from 'express'
 import StudentsControllers from './controller/StudentsController'
 
 /* 
-	src/routes.ts, 11/28/2020
-	Author: Weslley Borges dos Santos
-	Página que contém todas as rotas do backend
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Todas as rotas do backend;
 */
 
 const routes = Router()

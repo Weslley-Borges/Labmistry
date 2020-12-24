@@ -7,9 +7,8 @@ import './database/connection'
 import errorHandler from './errors/handler'
 
 /* 
-	src/server.ts, 11/18/2020
-	Author: Weslley Borges dos Santos
-	Arquivo onde inicia o backend e sua conexão
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Início do backend e conexão;
 */
 
 const app = express()
