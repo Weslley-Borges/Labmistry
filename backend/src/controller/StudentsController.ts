@@ -37,7 +37,6 @@ export default{
 		}
 	},
 
-
 	// Registra um novo aluno
   async create(request: Request, response: Response) {
 		//Desestruturamos o request.body
