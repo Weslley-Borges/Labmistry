@@ -34,6 +34,7 @@ export default{
 		}
 	},
 
+<<<<<<< HEAD
 
 	/*
 		--- Registro de aluno 
@@ -43,6 +44,9 @@ export default{
 		Aplica os dados no modelo da entidade de aluno (Student), e depois,salva no banco
 		de dados.
 	*/
+=======
+	// Registra um novo aluno
+>>>>>>> develop
   async create(request: Request, response: Response) {
 
 		const {

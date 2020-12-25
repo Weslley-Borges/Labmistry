@@ -8,9 +8,8 @@ import chooseStudent from '../assets/images/icons/chooseStudent.svg'
 import '../assets/styles/pages/registing.scss'
 
 /* 
-	src/pages/chooseRegister.tsx, 11/18/2020
-	Author: Weslley Borges dos Santos
-	Este arquivo é o frontend da página de escolha do tipo de registro
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Frontend da escolha do tipo de usuário
 */
 
 export default function ChooseRegister(){

@@ -9,9 +9,8 @@ import RegisterIcon from '../assets/images/icons/register.svg'
 import '../assets/styles/pages/landing.scss'
 
 /* 
-	src/pages/landing.tsx, 11/18/2020
-	Author: Weslley Borges dos Santos
-	Este arquivo é o frontend da landing page
+	18/11/2020 - Author: Weslley Borges dos Santos
+	Frontend da landing page
 */
 
 export default function Landing() {
