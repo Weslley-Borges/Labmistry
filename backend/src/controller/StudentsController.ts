@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm'
-import Student from '../entity/models/Students'
+import Student from '../entity/Students'
 import students_view from '../views/students_view'
 import * as Yup from 'yup'
 
