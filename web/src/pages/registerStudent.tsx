@@ -49,9 +49,10 @@ export default function RegisterStudent(){
 			"password": password,
 			"confirmPassword": confirmPassword,
 			"state": geoState,
-			"school": school
+			"school": school,
+			"role": 'student'
 		}
-		const result = await validateRegister("Student", data)
+		const result = await validateRegister(data)
 		if (result === true) {
 			document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
 			history.push('/')

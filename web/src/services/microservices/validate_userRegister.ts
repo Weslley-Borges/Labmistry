@@ -6,16 +6,17 @@ interface RegisterValues{
   password: string
   confirmPassword: string
   state: string
+  role: string
 
   school?: string
   schools?: [string]
 }
 
-export default async function ValidateRegister(userType: String, values: RegisterValues ) {
+export default async function ValidateRegister(values: RegisterValues ) {
 
   if (values.password === values.confirmPassword) {
 
-    if (userType === "Student") {
+    if (values.role === "student") {
       const data = { 
 				"username": values.username, 
 				"email": values.email, 
