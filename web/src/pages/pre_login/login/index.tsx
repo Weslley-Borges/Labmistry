@@ -1,9 +1,9 @@
 import React, { useState, FormEvent } from 'react'
 
-import SimplePageHeader from '../components/simplePageHeader'
-import InputAnimated from '../components/inputAnimated'
+import SimplePageHeader from '../../../components/simplePageHeader'
+import InputAnimated from '../../../components/inputAnimated'
 import EnterIcon from '../assets/images/icons/enter.svg'
-import ValidateLogin from '../services/microservices/validate_userLogin'
+import ValidateLogin from '../../../services/microservices/userLogin_validate/validate_userLogin'
 
 import '../assets/styles/pages/login.scss'
 
@@ -47,10 +47,9 @@ export default function Login() {
 
 					<InputAnimated name="Password" label="Senha" 
 						typing="password" required
-						value={Password} 
-						onChange={(e) => { setPassword(e.target.value) }}/>
+						value={Password} onChange={(e) => { setPassword(e.target.value) }}/>
 
-					<div className="RadioButton">
+					{/* <div className="RadioButton">
 						<input type="radio" id="opStudent" 
 							name="userPerfil" value="student"
 							checked={Student} 
@@ -62,7 +61,7 @@ export default function Login() {
 							checked={Teacher} 
 							onChange={(e) => { setTeacher(e.target.checked) }}/>
 						<label htmlFor="teacher">Professor</label>
-					</div>
+					</div> */}
 						
 					<button type="submit"><img src={EnterIcon} alt="Login" />Login</button>
 				</form>

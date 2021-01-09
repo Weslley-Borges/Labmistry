@@ -1,8 +1,8 @@
 import React, { useState, FormEvent } from 'react'
 
-import PageHeader from '../../components/pageHeader'
+import PageHeader from '../../../../components/pageHeader'
 
-import InputAnimated from '../../components/inputAnimated'
+import InputAnimated from '../../../../components/inputAnimated'
 import '../../assets/styles/pages/register.scss'
 import { AiOutlineWarning } from 'react-icons/ai'
 

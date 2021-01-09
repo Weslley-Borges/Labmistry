@@ -1,12 +1,12 @@
 import React, { useState, FormEvent } from 'react'
 
-import PageHeader from '../components/pageHeader'
-import Select from '../components/select'
-import InputAnimated from '../components/inputAnimated'
-import Textarea from '../components/textarea'
+import PageHeader from '../../../components/pageHeader'
+import Select from '../../../components/select'
+import InputAnimated from '../../../components/inputAnimated'
+import Textarea from '../../../components/textarea'
 
-import GeoStates from '../utils/states.json'
-import Schools from '../utils/schools.json'
+import GeoStates from '../../../utils/states.json'
+import Schools from '../../../utils/schools.json'
 import '../assets/styles/pages/register.scss'
 import { AiOutlineWarning } from 'react-icons/ai'
 

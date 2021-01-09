@@ -1,18 +1,19 @@
-import React, { useState, FormEvent } from 'react'
+import React, { useState, FormEvent, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { AiOutlineWarning } from 'react-icons/ai'
 
-import PageHeader from '../components/pageHeader'
-import Select from '../components/select'
-import InputAnimated from '../components/inputAnimated'
-import validateRegister from '../services/microservices/validate_userRegister'
+import PageHeader from '../../../components/pageHeader'
+import Select from '../../../components/select'
+import InputAnimated from '../../../components/inputAnimated'
+import validateRegister from '../../../services/microservices/userRegister_validate/validateRegister'
 
-import GeoStates from '../utils/states.json'
-import Schools from '../utils/schools.json'
+import GeoStates from '../../../utils/states.json'
+import Schools from '../../../utils/schools.json'
 import '../assets/styles/pages/register.scss'
+import API from '../../../services/api'
 
 /* 
-	18/11/2020 - Author: Weslley Borges dos Santos
+	18/11/2020 - Weslley Borges dos Santos
 	Frontent da página de registro dos alunos
 */
 
@@ -20,13 +21,13 @@ export default function RegisterStudent(){
 
 	const history = useHistory()
 
-	const [name, setName] = useState('')
+	const [username, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [geoState, setGeoState] = useState('')
 	const [school, setSchool] = useState('')
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
-
+	const role = 'student'
 
 	//	Recebe todos os estados e retorna um array de
 	//	objetos para usar no select de estados
@@ -39,24 +40,26 @@ export default function RegisterStudent(){
 	let getSchools:any = Schools.filter( school => school.state === geoState)
 	let schools = getSchools.map( (school:any) => { return( {value: school.name, label: school.name} )})
 
-	//	Os dados serão avaliados e enviados para o Backend
-	//	através do microservice validate_register
+	
 	async function handleRegister(e: FormEvent){
 		e.preventDefault()
-		const data = {
-			"username": name,
-			"email": email,
-			"password": password,
-			"confirmPassword": confirmPassword,
-			"state": geoState,
-			"school": school,
-			"role": 'student'
+
+		const data = { username, email, password, confirmPassword, geoState, school, role}
+
+		let email_is_unique
+		await API.get(`getting/${data.email}`).then(response => email_is_unique = response.data)
+
+		if (email_is_unique === "OK") {
+			console.log("O email é único")
+			const result = await validateRegister(data)
+			if (result === "OK") {
+				alert("Usuário criado com sucesso")
+				document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
+				history.push('/')
+			}
+			return alert(result)
 		}
-		const result = await validateRegister(data)
-		if (result === true) {
-			document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
-			history.push('/')
-		}
+		alert("Já existe um usuário com esse email")
 	}
 
 	return (
@@ -70,7 +73,7 @@ export default function RegisterStudent(){
 						<InputAnimated typing="text" 
 							label="Nome completo" 
 							name="completeName" required
-							value={name} onChange={(e) => { setName(e.target.value) }}/>
+							value={username} onChange={(e) => { setName(e.target.value) }}/>
 
 						<InputAnimated typing="email" 
 							label="E-mail" 
