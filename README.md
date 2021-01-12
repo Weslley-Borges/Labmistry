@@ -32,11 +32,11 @@ Cloning the repository:
 
 # Technologies
 - [ReactJS](https://reactjs.org/);
-- [React-Router](https://reacttraining.com/react-router/);
 - [NodeJS](https://nodejs.org/en/);
 - Express;
 - [MySQL](https://www.mysql.com/);
 - [Typescript](https://www.typescriptlang.org/a);
+- TypeORM;
 - SASS;
-- Yup
-- BcryptJS
+- Yup;
+- BcryptJS;

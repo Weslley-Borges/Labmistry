@@ -1,4 +1,4 @@
-import Student from "../entity/Students"
+import Student from "./entity"
 
 export default {
   render(student: Student) {
@@ -11,6 +11,9 @@ export default {
       school: student.school,
       bottles: student.bottles,
     }
+  },
+  showAlready(student: Student) {
+    return { email: student.email }
   },
 
   renderMany(students: Student[]) {

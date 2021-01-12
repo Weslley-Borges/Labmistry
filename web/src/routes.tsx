@@ -3,9 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Landing from './pages/pre_login/landing'
 import Login from './pages/pre_login/login'
-import ChooseRegister from './pages/pre_login/profileType'
-import RegisterStudent from './pages/pre_login/registerStudent'
-import RegisterTeacher from './pages/pre_login/registerTeacher'
+import Register from './pages/pre_login/register'
 import RegisterCompleted from './pages/pre_login/registerCompleted'
 
 import PeriodicTable from './pages/pos_login/periodicTable'
@@ -26,9 +24,7 @@ export default function Routes() {
 			<Switch>
 				<Route path="/" exact component={Landing}/>
 				<Route path="/login" exact component={Login}/>
-				<Route path="/create" exact component={ChooseRegister}/>
-				<Route path="/create/student" exact component={RegisterStudent}/>
-				<Route path="/create/teacher" exact component={RegisterTeacher}/>
+				<Route path="/create" exact component={Register}/>
 				<Route path="/create/completed" exact component={RegisterCompleted}/>
 
 				{/*Páginas principais (vão precisar da autenticação do usuário)*/}

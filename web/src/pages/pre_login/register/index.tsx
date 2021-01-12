@@ -14,10 +14,10 @@ import API from '../../../services/api'
 
 /* 
 	18/11/2020 - Weslley Borges dos Santos
-	Frontent da página de registro dos alunos
+	Frontent da página de registro
 */
 
-export default function RegisterStudent(){
+export default function Register(){
 
 	const history = useHistory()
 
@@ -27,7 +27,6 @@ export default function RegisterStudent(){
 	const [school, setSchool] = useState('')
 	const [password, setPassword] = useState('')
 	const [confirmPassword, setConfirmPassword] = useState('')
-	const role = 'student'
 
 	//	Recebe todos os estados e retorna um array de
 	//	objetos para usar no select de estados
@@ -44,7 +43,7 @@ export default function RegisterStudent(){
 	async function handleRegister(e: FormEvent){
 		e.preventDefault()
 
-		const data = { username, email, password, confirmPassword, geoState, school, role}
+		const data = { username, email, password, confirmPassword, geoState, school}
 
 		let email_is_unique
 		await API.get(`getting/${data.email}`).then(response => email_is_unique = response.data)
@@ -64,7 +63,7 @@ export default function RegisterStudent(){
 
 	return (
 		<div className="container page-register">
-      <PageHeader title="Olá, aluno!" link = "/create" description="Receba suas aulas online"/>
+      <PageHeader title="Olá, usuário!" link = "/create" description="Receba suas aulas online"/>
 
       <main>
 				<form onSubmit={handleRegister}>
@@ -81,7 +80,7 @@ export default function RegisterStudent(){
 							value={email} onChange={(e) => { setEmail(e.target.value) }}/>
 					</fieldset>
 
-					<fieldset> <legend>Onde você estuda?</legend>
+					<fieldset> <legend>De onde você é?</legend>
 						<Select name="geoState" label="Estado" required
 							value={geoState} onChange={(e) => { setGeoState(e.target.value) }}
 							options={states}/>
