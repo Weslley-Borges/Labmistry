@@ -1,0 +1,16 @@
+.page-registerCompleted{ 
+  width: 100vw; height: 100vh;
+  color: var(--color-primary); background: var(--color-primary);
+  overflow: hidden;
+  .message-box {
+    width: 100%;
+    color: white;
+    .image {
+      width: 10rem;
+      height: 10rem;
+      #image {
+        size: 100%
+      }
+    }
+  }
+}

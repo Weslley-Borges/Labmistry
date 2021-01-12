@@ -1,15 +1,16 @@
-import { Router } from 'express'
-import StudentsControllers from './controller/StudentsController'
+import { Router, Request, Response } from 'express'
+import { createUserController } from './repositories/user/useCases/CreateUser'
 
 /* 
-	18/11/2020 - Author: Weslley Borges dos Santos
-	Todas as rotas do backend;
+	11/28/2020 - Weslley Borges dos Santos
+	Página que contém todas as rotas do backend
 */
 
 const routes = Router()
-routes.get('/getting', StudentsControllers.index)
-routes.get('/getting/:id', StudentsControllers.show)
-routes.post('/createStudent', StudentsControllers.create)
-
+// routes.get('/getting', StudentsController.index)
+// routes.get('/getting/:email', StudentsController.show)
+routes.post('/createStudent', (request: Request, response: Response) => {
+	return createUserController.handle(request, response)
+})
 
 export default routes
