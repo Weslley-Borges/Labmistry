@@ -7,18 +7,32 @@ export class CreateUserController {
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
-    const { username, email, userpassword, state, school } = request.body
+    const { username, email, userpassword_init, state, school } = request.body
 
     try {
-      await this.createUserUseCase.execute({
+      const result:any = await this.createUserUseCase.execute({
         username,
         email,
-        userpassword,
+        userpassword_init,
         state,
         school
       })
+      
+      let STATUS
 
-      return response.status(201).json({message: "OK"})
+      if (result != "Já existe um usuário com esse email") {
+        STATUS = {
+          status_number: 201,
+          status_message: "OK"
+        }
+      } else {
+         STATUS = {
+          status_number: 201,
+          status_message: "Já existe um usuário com esse email"
+        }
+      }
+      response.status(STATUS.status_number).json(STATUS.status_message)
+      return result
 
     } catch (err) {
       return response.status(400).json({

@@ -1,6 +1,6 @@
-import { ICreateUserRequestDTO } from "./CreateUserDTO";
+import { ICreateUserRequestDTO } from "../../UserDTO";
 
 export interface IUsersRepository {
   findByEmail(email: string): Promise<string>
-  registerUser(user: ICreateUserRequestDTO): Promise<void>
+  registerUser(user: ICreateUserRequestDTO): Promise<string>
 }
