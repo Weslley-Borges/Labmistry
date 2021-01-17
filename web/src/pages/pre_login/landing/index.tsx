@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import LogoImg from '../assets/images/logo.svg'
-import LandingImg from '../assets/images/principal_image.svg'
-import LoginIcon from '../assets/images/icons/login.svg'
-import RegisterIcon from '../assets/images/icons/register.svg'
+import LogoImg from '../../../assets/images/logo.svg'
+import LandingImg from '../../../assets/images/principal_image.svg'
+import LoginIcon from '../../../assets/images/icons/login.svg'
+import RegisterIcon from '../../../assets/images/icons/register.svg'
 
-import '../assets/styles/pages/landing.scss'
+import './styles.scss'
 
 /* 
 	18/11/2020 - Author: Weslley Borges dos Santos

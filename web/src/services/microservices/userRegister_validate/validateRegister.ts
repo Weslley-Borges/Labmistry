@@ -1,9 +1,7 @@
 import API from '../../api'
-import IRegisterValues from './IRegisterValues'
+import RegisterValuesDTO from './registerValuesDTO'
 
-export default async function ValidateRegister(values: IRegisterValues ) {
-
-  if (values.password != values.confirmPassword) return 'As senhas devem ser iguais'
+export default async function ValidateRegister(values: RegisterValuesDTO ) {
   
   const data = { 
 		"username": values.username, 
@@ -12,6 +10,8 @@ export default async function ValidateRegister(values: IRegisterValues ) {
 		"state": values.geoState, 
 		"school": values.school 
   }
-  API.post('createStudent', values)
-  return "OK"
+
+  let result = (await API.post('createStudent', data)).data
+  return result
+  
 }

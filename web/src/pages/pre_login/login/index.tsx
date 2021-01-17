@@ -2,10 +2,10 @@ import React, { useState, FormEvent } from 'react'
 
 import SimplePageHeader from '../../../components/simplePageHeader'
 import InputAnimated from '../../../components/inputAnimated'
-import EnterIcon from '../assets/images/icons/enter.svg'
+import EnterIcon from '../../../assets/images/icons/enter.svg'
 import ValidateLogin from '../../../services/microservices/userLogin_validate/validate_userLogin'
 
-import '../assets/styles/pages/login.scss'
+import './styles.scss'
 
 
 /* 

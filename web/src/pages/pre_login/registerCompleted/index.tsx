@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
-
-import '../assets/styles/pages/registerComplete.scss'
+import "./styles.scss"
 
 
 /* 

@@ -9,8 +9,7 @@ import validateRegister from '../../../services/microservices/userRegister_valid
 
 import GeoStates from '../../../utils/states.json'
 import Schools from '../../../utils/schools.json'
-import '../assets/styles/pages/register.scss'
-import API from '../../../services/api'
+import '../../../assets/styles/register.scss'
 
 /* 
 	18/11/2020 - Weslley Borges dos Santos
@@ -45,25 +44,20 @@ export default function Register(){
 
 		const data = { username, email, password, confirmPassword, geoState, school}
 
-		let email_is_unique
-		await API.get(`getting/${data.email}`).then(response => email_is_unique = response.data)
-
-		if (email_is_unique === "OK") {
-			console.log("O email é único")
+		if (password === confirmPassword) {
 			const result = await validateRegister(data)
-			if (result === "OK") {
+			if (result == "OK") {
 				alert("Usuário criado com sucesso")
 				document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
 				history.push('/')
-			}
-			return alert(result)
-		}
-		alert("Já existe um usuário com esse email")
+				return
+			} else return alert(result)
+		} else return alert("As senhas devem ser iguais!")
 	}
 
 	return (
 		<div className="container page-register">
-      <PageHeader title="Olá, usuário!" link = "/create" description="Receba suas aulas online"/>
+      <PageHeader title="Olá, usuário!" link = "/" description="Receba suas aulas online"/>
 
       <main>
 				<form onSubmit={handleRegister}>
