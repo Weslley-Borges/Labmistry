@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../assets/styles/pages/periodicTable.scss'
+import './styles.scss'
 import elements from '../../../utils/elements.json'
 /* 
 	src/pages/periodicTable.tsx, 11/18/2020

@@ -5,8 +5,8 @@ import { ImEnter } from 'react-icons/im'
 import { FaPlus } from 'react-icons/fa'
 import { BiArrowBack } from 'react-icons/bi'
 
-import '../../assets/styles/pages/chat/landingChat.scss'
-import GroupChat from '../../assets/images/groupChat.svg'
+import './styles.scss'
+import GroupChat from '../../../../assets/images/groupChat.svg'
 
 
 /* 

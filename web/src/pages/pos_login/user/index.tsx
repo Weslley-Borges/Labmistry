@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import '../../assets/styles/pages/user/home.scss'
+import './styles.scss'
 
 /* 
 	src/pages/user/home.tsx, 12/18/2020
