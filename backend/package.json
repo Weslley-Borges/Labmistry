@@ -23,6 +23,7 @@
       "yup": "^0.32.8"
    },
    "devDependencies": {
+      "@types/bcryptjs": "^2.4.2",
       "@types/cookie-parser": "^1.4.2",
       "@types/cors": "^2.8.9",
       "@types/dotenv": "^8.2.0",

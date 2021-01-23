@@ -1,34 +1,31 @@
 import { Request, Response } from 'express'
-import { CreateUserUseCase } from './CreateUserUseCase';
+import { LoginUserUseCase } from './LoginUserUseCase';
 
-export class CreateUserController {
+export class LoginUserController {
   constructor (
-    private createUserUseCase: CreateUserUseCase
+    private loginUserUseCase: LoginUserUseCase
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
-    const { username, email, userpassword_request, state, school } = request.body
+    const { email, userpassword } = request.body
 
     try {
-      const result:any = await this.createUserUseCase.execute({
-        username,
+      const result:any = await this.loginUserUseCase.execute({
         email,
-        userpassword_request,
-        state,
-        school
+        userpassword
       })
       
       let STATUS
 
-      if (result != "Já existe um usuário com esse email") {
+      if (result != "Online") {
         STATUS = {
           status_number: 201,
-          status_message: "OK"
+          status_message: `Falhou, resultado: ${result}`
         }
       } else {
          STATUS = {
           status_number: 201,
-          status_message: "Já existe um usuário com esse email"
+          status_message: "OK"
         }
       }
       response.status(STATUS.status_number).json(STATUS.status_message)

@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinColumn, Index } from 'typeorm'
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinColumn, Index, Binary } from 'typeorm'
 
 export enum UserRole {
   ADMIN = "admin",

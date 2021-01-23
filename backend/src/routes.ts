@@ -1,5 +1,6 @@
 import { Router, Request, Response } from 'express'
 import { createUserController } from './repositories/user/useCases/CreateUser'
+import { loginUserController } from './repositories/user/useCases/LoginUser'
 import StudentsController from './repositories/user/ANTIGOS_SERVICES'
 
 /* 
@@ -10,8 +11,12 @@ import StudentsController from './repositories/user/ANTIGOS_SERVICES'
 const routes = Router()
 routes.get('/getting', StudentsController.index)
 routes.get('/getting/:email', StudentsController.show)
-routes.post('/createStudent', (request: Request, response: Response) => {
+
+routes.post('/createUser', (request: Request, response: Response) => {
 	return createUserController.handle(request, response)
+})
+routes.post('/loginUser', (request: Request, response: Response) => {
+	return loginUserController.handle(request, response)
 })
 
 export default routes

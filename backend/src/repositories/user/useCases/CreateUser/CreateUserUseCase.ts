@@ -1,5 +1,5 @@
 import { IMAilProvider } from '../../../../providers/IMailProviders';
-import { IUsersRepository } from "./IUsersRepository";
+import { IUsersRepository } from "../../IUsersRepository";
 import { ICreateUserRequestDTO } from "../../UserDTO";
 
 /*  Registro de usuários
@@ -20,7 +20,7 @@ export class CreateUserUseCase {
   async execute(data: ICreateUserRequestDTO) {
     const userAlreadyExists = await this.usersRepository.findByEmail(data.email)
 
-    if (userAlreadyExists != "OK") {
+    if (userAlreadyExists != null) {
       return "Já existe um usuário com esse email"
     }
 

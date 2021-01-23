@@ -6,4 +6,4 @@ import { app } from "./app"
 	Arquivo onde inicia o backend e sua conexão
 */
 
-app.listen(3080, () => console.log("BACKEND INICIADO COM SUCESSO!"))
+app.listen(3080, () => console.log(">>>>>> Backend initalized sucessfuly!"))
