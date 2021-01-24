@@ -1,23 +1,20 @@
 import { Request, Response } from 'express'
-import { CreateUserUseCase } from './CreateUserUseCase';
+import { AuthUserUseCase } from './AuthUserUseCase';
 
-export class CreateUserController {
+export class AuthUserController {
   constructor (
-    private createUserUseCase: CreateUserUseCase
+    private authUserUseCase: AuthUserUseCase
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
-    const { username, email, userpassword_request, state, school } = request.body
+    const { email, userpassword } = request.body
 
     try {
-      const result:any = await this.createUserUseCase.execute({
-        username,
+      const result:any = await this.authUserUseCase.execute({
         email,
-        userpassword_request,
-        state,
-        school
+        userpassword
       })
-      
+    
       response.status(result.status).json(result.message)
       return result
 

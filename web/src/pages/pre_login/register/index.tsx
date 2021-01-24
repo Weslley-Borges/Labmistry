@@ -5,7 +5,7 @@ import { AiOutlineWarning } from 'react-icons/ai'
 import PageHeader from '../../../components/pageHeader'
 import Select from '../../../components/select'
 import InputAnimated from '../../../components/inputAnimated'
-import validateRegister from '../../../services/microservices/userRegister_validate/validateRegister'
+import validateRegister from '../../../services/microservices/UserRegister.validate.'
 
 import GeoStates from '../../../utils/states.json'
 import Schools from '../../../utils/schools.json'
@@ -44,15 +44,13 @@ export default function Register(){
 
 		const data = { username, email, password, confirmPassword, geoState, school}
 
-		if (password === confirmPassword) {
-			const result = await validateRegister(data)
-			if (result == "OK") {
-				alert("Usuário criado com sucesso")
-				document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
-				history.push('/')
-				return
-			} else return alert(result)
-		} else return alert("As senhas devem ser iguais!")
+		const result = await validateRegister(data)
+		if (result == "OK") {
+			alert("Usuário criado com sucesso")
+			document.getElementById('confirm_button')?.setAttribute('disabled', 'true')
+			history.push('/')
+			return
+		} else return alert(result)
 	}
 
 	return (

@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import { getRepository } from 'typeorm'
-import Student from './entity'
-import students_view from './implementations/views/UserViews'
+import Student from '../repositories/user/Model'
+import students_view from '../repositories/user/implementations/UserViews'
 /* 
  	18 nov. 2020 - Weslley Borges dos Santos
 	Controller da tabela "students", aqui são as operações realizadas.

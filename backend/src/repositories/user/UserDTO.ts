@@ -6,7 +6,7 @@ export interface ICreateUserRequestDTO {
   school: string
 }
 
-export interface ILoginUserRequestDTO {
+export interface IAuthUserRequestDTO {
   email: string
   userpassword: string
 }
