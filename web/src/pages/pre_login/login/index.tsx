@@ -3,8 +3,6 @@ import React, { useState, FormEvent } from 'react'
 import SimplePageHeader from '../../../components/simplePageHeader'
 import InputAnimated from '../../../components/inputAnimated'
 import EnterIcon from '../../../assets/images/icons/enter.svg'
-import ValidateLogin from '../../../services/microservices/userLogin_validate/validate_userLogin'
-
 import './styles.scss'
 
 
@@ -29,7 +27,7 @@ export default function Login() {
 			"email": email, 
 			"password": Password, 
 		}
-		ValidateLogin(userData)
+		alert(userData)
 	}
 
 	return (

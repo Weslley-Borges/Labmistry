@@ -4,9 +4,7 @@ import { ICreateUserRequestDTO } from "../../UserDTO";
 
 /*  Registro de usuários
     - Verificamos se o email já está registrado;
-    - Encriptamos a senha;
-    - Validamos os dados;
-    - Salvamos no banco de dados;
+    - Validamos os dados do registro
     - Enviamos um email para o usuário
 	*/
 
@@ -20,23 +18,22 @@ export class CreateUserUseCase {
   async execute(data: ICreateUserRequestDTO) {
     const userAlreadyExists = await this.usersRepository.findByEmail(data.email)
 
-    if (userAlreadyExists != null) {
-      return "Já existe um usuário com esse email"
-    }
+    if (userAlreadyExists != null) return {status: 200, message: "Já existe um usuário com esse email"}
 
-    await this.usersRepository.registerUser(data)
-
-    this.mailProvider.sendMail({
-      to: {
-        name: data.username,
-        email: data.email
-      },
-      from: {
-        name: "Criador da Labmistry",
-        email: "weslley15bs@gmail.com"
-      },
-      subject: "Seja bem-vindo à Labmistry",
-      body: "<p>Agora você pode fazer o login em nossa plataforma</p>"
-    })
+    if (await this.usersRepository.registerUser(data)) {
+      this.mailProvider.sendMail({
+        to: {
+          name: data.username,
+          email: data.email
+        },
+        from: {
+          name: "Criador da Labmistry",
+          email: "weslley15bs@gmail.com"
+        },
+        subject: "Seja bem-vindo à Labmistry",
+        body: "<p>Agora você pode fazer o login em nossa plataforma</p>"
+      })
+      return {status: 201, message: "Usuário criado"}
+    } else return {staqtus: 400, message: "Deu um erro na aplicação"}
   }
 }

@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express'
 import { createUserController } from './repositories/user/useCases/CreateUser'
-import { loginUserController } from './repositories/user/useCases/LoginUser'
-import StudentsController from './repositories/user/ANTIGOS_SERVICES'
+import { authUserController } from './repositories/user/useCases/AuthUser'
+import StudentsController from './tests/UserServices'
 
 /* 
 	11/28/2020 - Weslley Borges dos Santos
@@ -15,8 +15,8 @@ routes.get('/getting/:email', StudentsController.show)
 routes.post('/createUser', (request: Request, response: Response) => {
 	return createUserController.handle(request, response)
 })
-routes.post('/loginUser', (request: Request, response: Response) => {
-	return loginUserController.handle(request, response)
+routes.post('/authUser', (request: Request, response: Response) => {
+	return authUserController.handle(request, response)
 })
 
 export default routes

@@ -1,4 +1,4 @@
-import Student from "../../entity"
+import Student from "../Model"
 
 export default {
   render(student: Student) {
