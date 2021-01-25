@@ -1,12 +1,11 @@
 import { IMAilProvider } from '../../../../providers/IMailProviders';
-import { IUsersRepository } from "../../IUsersRepository";
-import { ICreateUserRequestDTO } from "../../UserDTO";
+import { ICreateUserRequestDTO, IUsersRepository } from "../../UserDTO";
 
 /*  Registro de usuários
     - Verificamos se o email já está registrado;
     - Validamos os dados do registro
     - Enviamos um email para o usuário
-	*/
+*/
 
 export class CreateUserUseCase {
 
