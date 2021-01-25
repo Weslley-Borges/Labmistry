@@ -1,6 +1,5 @@
 import { getRepository } from "typeorm";
-import { IUsersRepository } from "../IUsersRepository";
-import { ICreateUserRequestDTO, IAuthUserRequestDTO } from "../UserDTO";
+import { ICreateUserRequestDTO, IAuthUserRequestDTO, IUsersRepository } from "../UserDTO";
 import User from "../Model";
 import * as Yup from 'yup'
 import * as bcrypt from 'bcryptjs'
@@ -11,13 +10,13 @@ export class MySQLUsersRepository implements IUsersRepository{
   async findByEmail(email: string): Promise<any> {
     const user = await getRepository(User).findOne({ where: {email: email} })
 
-    if (user) return user.email
+    if (user) return user
     return null
   }
 
   async registerUser(user: ICreateUserRequestDTO): Promise<Boolean> {
     const { username, email, userpassword_request, state, school} = user
-    const userpassword = await bcrypt.hash(String(userpassword_request), bcrypt.genSaltSync(10))
+    const userpassword = await bcrypt.hash(userpassword_request, bcrypt.genSaltSync(10))
 
     try {
       const newData = {username, email, userpassword, state, school}
@@ -43,7 +42,12 @@ export class MySQLUsersRepository implements IUsersRepository{
 
   async comparePasswords(user: IAuthUserRequestDTO): Promise<Boolean> {
     const user_object:any = await getRepository(User).findOne({where: {email: user.email}})
-
-    return await bcrypt.compare(user.userpassword, user_object.userpassword)
+    
+    try {
+      return await bcrypt.compare(user.userpassword, user_object.userpassword)
+    } catch (error) {
+      console.log("Houve um erro a comparação das senhas:\n",error)
+      return false
+    }
   }
 }
