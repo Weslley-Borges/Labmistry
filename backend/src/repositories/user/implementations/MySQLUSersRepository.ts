@@ -1,9 +1,8 @@
-import { getRepository } from "typeorm";
-import { ICreateUserRequestDTO, IAuthUserRequestDTO, IUsersRepository } from "../UserDTO";
-import User from "../Model";
 import * as Yup from 'yup'
 import * as bcrypt from 'bcryptjs'
-
+import { getRepository } from "typeorm";
+import { ICreateUserRequestDTO, IUsersRepository } from "../UserDTO";
+import User from "../Model";
 
 export class MySQLUsersRepository implements IUsersRepository{
   
@@ -40,14 +39,7 @@ export class MySQLUsersRepository implements IUsersRepository{
     }
   }
 
-  async comparePasswords(user: IAuthUserRequestDTO): Promise<Boolean> {
-    const user_object:any = await getRepository(User).findOne({where: {email: user.email}})
-    
-    try {
-      return await bcrypt.compare(user.userpassword, user_object.userpassword)
-    } catch (error) {
-      console.log("Houve um erro a comparação das senhas:\n",error)
-      return false
-    }
+  async comparePasswords(requestPassword: string, hashedPassword: string): Promise<Boolean> {
+    return await bcrypt.compare(requestPassword, hashedPassword)
   }
 }

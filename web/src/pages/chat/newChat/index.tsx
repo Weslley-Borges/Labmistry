@@ -1,25 +1,15 @@
 import React, { useState, FormEvent } from 'react'
-
-import PageHeader from '../../../../components/pageHeader'
-
-import InputAnimated from '../../../../components/inputAnimated'
-import '../../../../assets/styles/register.scss'
 import { AiOutlineWarning } from 'react-icons/ai'
+import PageHeader from '../../../components/pageHeader'
+import InputAnimated from '../../../components/inputAnimated'
+import '../../../../assets/styles/register.scss'
 
-/* 
-	src/pages/registerTeacher.tsx, 12/17/2020
-	Author: Weslley Borges dos Santos
-	Este arquivo é o frontend da página de criação de sala
-*/
 
 export default function NewChat(){
 	const [name, setName] = useState('')
 	const [description, setDescription] = useState('')
 
-	/*
-		Na função handleCreate, os dados do formulário são recebidos 
-		e avaliados, depois são mostrados em um alert, com os dados do registro (por enquanto).
-	*/
+	
 	function handleCreate(e: FormEvent){
 		e.preventDefault()
 		const registerValues = {

@@ -3,8 +3,6 @@ import express from "express"
 import cors from 'cors';
 import routes from './routes'
 import 'express-async-errors'
-
-import './database/connection'
 import errorHandler from './errors/handler'
 
 const app = express()
