@@ -1,24 +1,16 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Landing from './pages/landing'
+import Login from './pages/login'
+import Register from './pages/register'
+import RegisterCompleted from './pages/registerCompleted'
+import PeriodicTable from './pages/periodicTable'
+import Home from './pages/user'
+import LandingChat from './pages/chat/landing'
+import NewChat from './pages/chat/newChat'
 
-import Landing from './pages/pre_login/landing'
-import Login from './pages/pre_login/login'
-import Register from './pages/pre_login/register'
-import RegisterCompleted from './pages/pre_login/registerCompleted'
 
-import PeriodicTable from './pages/pos_login/periodicTable'
-
-import Home from './pages/pos_login/user'
-
-import LandingChat from './pages/pos_login/chat/landing'
-import NewChat from './pages/pos_login/chat/newChat'
-
-/* 
-	13/11/2020 - Weslley Borges dos Santos
-	Todas as rotas do frontend
-*/
-
-export default function Routes() {
+const Routes = () => {
 	return (
 		<BrowserRouter>
 			<Switch>
@@ -37,3 +29,4 @@ export default function Routes() {
       </Switch>
 		</BrowserRouter>
 )}
+export default Routes

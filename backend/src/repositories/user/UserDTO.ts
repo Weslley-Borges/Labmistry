@@ -6,7 +6,7 @@ export interface ICreateUserRequestDTO {
   school: string
 }
 
-export interface IAuthUserRequestDTO {
+export interface ILoginRequestDTO {
   email: string
   userpassword: string
 }
@@ -15,5 +15,5 @@ export interface IAuthUserRequestDTO {
 export interface IUsersRepository {
   findByEmail(email: string): Promise<any>
   registerUser(user: ICreateUserRequestDTO): Promise<Boolean>
-  comparePasswords(user: IAuthUserRequestDTO): Promise<Boolean>
+  comparePasswords(requestPassword: string, hashedPassword: string): Promise<Boolean>
 }

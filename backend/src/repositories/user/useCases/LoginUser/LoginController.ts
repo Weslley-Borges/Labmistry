@@ -1,21 +1,24 @@
 import { Request, Response } from 'express'
-import { AuthUserUseCase } from './AuthUserUseCase';
+import { LoginUseCase } from './LoginUseCase';
 
-export class AuthUserController {
+export class LoginController {
   constructor (
-    private authUserUseCase: AuthUserUseCase
+    private loginUseCase: LoginUseCase
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
     const { email, userpassword } = request.body
 
     try {
-      const result:any = await this.authUserUseCase.execute({
+      const result:any = await this.loginUseCase.execute({
         email,
         userpassword
       })
     
-      response.status(result.status).json(result.message)
+      if (result.sessionUser) {
+        response.json({message: result.message, session: result.sessionUser})
+
+      } else response.json(result.message)
       return result
 
     } catch (err) {

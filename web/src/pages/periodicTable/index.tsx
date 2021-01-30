@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './styles.scss'
-import elements from '../../../utils/elements.json'
+import elements from '../../utils/elements.json'
 /* 
 	src/pages/periodicTable.tsx, 11/18/2020
 	Author: Weslley Borges dos Santos
