@@ -6,7 +6,7 @@
    "author": "weslley Borges dos Santos",
    "license": "MIT",
    "scripts": {
-      "dev:backend": "ts-node-dev --transpile-only --ignore-watch node_modules src/main.ts",
+      "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/main.ts",
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
    },
    "dependencies": {

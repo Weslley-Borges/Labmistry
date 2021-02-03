@@ -6,7 +6,7 @@ interface ValidationErrors {
 }
 
 
-const errorHandler: ErrorRequestHandler = (error, request, response, next) => {
+const errorHandler: ErrorRequestHandler = (error: Error, request, response, next) => {
 
   if (error instanceof ValidationError) {
     let errors: ValidationErrors =  {}
@@ -18,7 +18,7 @@ const errorHandler: ErrorRequestHandler = (error, request, response, next) => {
     return response.status(400).json({message: 'Validation Fails', errors})
   }
   // Para mostrar o erro no terminal
-  console.error(`Houve um erro na aplicação:\n${error}`)
+  console.error(`Houve um erro na aplicação:\nNome do Erro: ${error.name}\nMensagem de Erro: ${error.name}\nStack do Erro: ${error.stack}`)
   
   // Mostrar o erro pro usuário
   return response.status(500).json({message:"Internal Server Error\n"})

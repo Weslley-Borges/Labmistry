@@ -39,4 +39,7 @@ export default class User {
 
   @Column("simple-array")
   teachers: string[]
+
+  @Column()
+  session_token: string
 }
