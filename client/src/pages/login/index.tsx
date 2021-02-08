@@ -13,7 +13,7 @@ export const Login = () => {
 		const result = await validateLogin({ email, password })
 
 		if (result.message !== "Autenticado com sucesso") {
-			alert(result.message)
+			alert("Email e/ou senha estão errados")
 		} else {
 			alert("Usuário logado com sucesso")
 			console.log(result)

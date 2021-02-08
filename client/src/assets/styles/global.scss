@@ -1,5 +1,9 @@
-*{margin: 0; padding: 0;box-sizing: border-box}
-:root{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+:root {
   font-size: 60%;
   --color-primary-ligther: #9871F5;
   --color-primary-ligth: #916BEA;
@@ -19,15 +23,30 @@
   --color-box-base: #FAFAFA;
   --color-box-footer: #F6F7F6;
 }
-#root{display: flex; align-items: center; justify-content: center;}
-body,button,input,textarea{
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body,button,input,textarea {
   font: 500 1.6rem "Courier New", Courier, monospace;
   color: var(--color-title-in-primary)
 }
-input, textarea{color: #000000;}
-label{font-style: Arial, Helvetica, sans-serif}
-.container{width: 90vw; max-width: 700px}
-a{
+input, textarea{
+  color: #000000;
+}
+label {
+  font-style: Arial, Helvetica, sans-serif
+}
+.container {
+  width: 100vw;
+  max-width: 700px
+}
+a {
   text-decoration: none;
 }
-@media (min-width: 700px){:root{font-size:  62.5%}}
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%
+  }
+}

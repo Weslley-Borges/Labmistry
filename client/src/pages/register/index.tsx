@@ -23,25 +23,23 @@ export const Register = () => {
 	let schools = Schools.filter(school => school.state === state)
 		.map((school:any) => {return({value: school.name, label: school.name})})
 
-	
 	async function handleRegister(e: FormEvent){
 		e.preventDefault()
 		const result = await validateRegister({username, email, password, confirmPassword, state, school})
 		
-		if (result !== "OK") { 
+		if (result !== "Usuário criado") { 
 			return alert(result)
 		} else {
-			alert("Usuário criado com sucesso")
-			history.push('/')
+			history.push('/login')
 			return
 		}
 	}
 
 	return (
-		<div className="container page-register">
+		<div className="page-register">
       <PageHeader title="Olá, usuário!" link = "/" description="Receba suas aulas online"/>
 
-      <main>
+      <main className="container">
 				<form onSubmit={handleRegister}>
 
 					<fieldset> <legend>Seus Dados</legend>

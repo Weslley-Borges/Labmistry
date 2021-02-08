@@ -1,5 +1,5 @@
 import React from 'react'
-import elements from '../../utils/elements.json'
+import elements from '../../utils/JSON/elements.json'
 import './styles.scss'
 
 
