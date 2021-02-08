@@ -2,11 +2,12 @@
    "name": "server",
    "version": "0.0.5",
    "description": "Backend of Labmistry platform",
-   "main": "index.js",
+   "main": "src/main.ts",
    "author": "weslley Borges dos Santos",
    "license": "MIT",
+   "keywords": ["NodeJS","TypeORM","MySQL","API"],
    "scripts": {
-      "dev:backend": "ts-node-dev --transpile-only --ignore-watch node_modules src/main.ts",
+      "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/main.ts",
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
    },
    "dependencies": {

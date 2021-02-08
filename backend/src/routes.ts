@@ -1,8 +1,7 @@
 import { Router, Request, Response } from 'express'
-import { createUserController } from './repositories/user/useCases/CreateUser'
-import { loginController } from './repositories/user/useCases/LoginUser'
-import StudentsController from './tests/UserServices'
+import { createUserController, loginController } from './repositories/user/useCases'
 import { auth } from './middlewares/auth'
+import StudentsController from './tests/UserServices'
 
 const routes = Router()
 

@@ -44,8 +44,6 @@ export class users1610275265828 implements MigrationInterface {
 					default: 0,
 					isNullable: false
 				},
-
-				// Depende do tipo de usuário
 				{
 					name: "role",
 					type: "varchar",
@@ -53,8 +51,11 @@ export class users1610275265828 implements MigrationInterface {
 				{
 					name: 'teachers',
 					type: 'json',
+				},
+				{
+					name: "session_token",
+					type: "varchar",
 				}
-
 			]
 		}))
   }
