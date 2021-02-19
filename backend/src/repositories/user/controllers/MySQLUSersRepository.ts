@@ -6,8 +6,8 @@ import User from "../Model";
 
 export class MySQLUsersRepository implements IUsersRepository{
   
-  async findByEmail(email: string): Promise<any> {
-    const user = await getRepository(User).findOne({ where: {email: email} })
+  async findUser(value: string, data: string): Promise<any> {
+    const user = await getRepository(User).createQueryBuilder().where(`${data}= :value`, {value: value}).getOne()
 
     if (user) return user
     return null

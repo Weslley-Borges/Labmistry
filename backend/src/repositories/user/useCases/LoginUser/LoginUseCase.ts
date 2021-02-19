@@ -1,5 +1,5 @@
 import { IUsersRepository, ILoginRequestDTO } from "../../UserDTO";
-import { JWTRepository } from "../../implementations/JWTRepository";
+import { JWTRepository } from "../../controllers/JWTRepository";
 import User from "../../Model";
 
 /*  Autenticação de usuários
@@ -8,20 +8,16 @@ import User from "../../Model";
 */
 
 export class LoginUseCase {
-
   constructor(
     private usersRepository: IUsersRepository,
     private jwtRepository: JWTRepository
   ) {}
-
+  
   async execute(data: ILoginRequestDTO) {
-    const user: User = await this.usersRepository.findByEmail(data.email)
+    const user: User = await this.usersRepository.findUser(data.email, "email")
 
-    if (user != null && await this.usersRepository.comparePasswords(data.userpassword, user.userpassword)) {
-      return {auth: true, status: 200, message: "Autenticado com sucesso", sessionUser: await this.jwtRepository.signUser(user)}
-
-    } else {
-      return {status: 401, message: "Email e/ou senha estão errados"}
-    }
+    return user != null && await this.usersRepository.comparePasswords(data.userpassword, user.userpassword)
+      ? {auth: true, status: 200, message: "Autenticado com sucesso", sessionUser: await this.jwtRepository.signUser(user)}
+      : {status: 401, message: "Email e/ou senha estão errados"}
   }
 }
