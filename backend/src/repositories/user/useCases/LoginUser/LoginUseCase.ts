@@ -1,5 +1,5 @@
 import { IUsersRepository, ILoginRequestDTO } from "../../UserDTO";
-import { JWTRepository } from "../../Implementations/JWTRepository";
+import { JWTRepository } from "../../controllers/JWTRepository";
 import User from "../../Model";
 
 /*  Autenticação de usuários

@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
 import { auth } from './middlewares/auth'
-import * as user from './repositories/R_User/useCases'
+import * as user from './repositories/User/useCases'
 
 const routes = Router()
 

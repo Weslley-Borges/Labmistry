@@ -14,7 +14,7 @@
     "removeComments": true,
 
     "paths": {
-      "@implementations": ["src/repositories/R_User/Implementations"]
+      "@implementations": ["src/repositories/User/Implementations"]
     }
   }
 }

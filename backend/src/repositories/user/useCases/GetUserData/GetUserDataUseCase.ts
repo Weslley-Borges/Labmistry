@@ -1,5 +1,5 @@
 import { IUsersRepository, IGetUserDataRequestDTO } from "../../UserDTO";
-import UserViews from "../../Implementations/UserViews"
+import UserViews from "../../controllers/UserViews"
 import User from "../../Model";
 import { getRepository } from "typeorm";
 
