@@ -11,10 +11,6 @@
     "skipLibCheck": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "removeComments": true,
-
-    "paths": {
-      "@implementations": ["src/repositories/User/Implementations"]
-    }
+    "removeComments": true
   }
 }
