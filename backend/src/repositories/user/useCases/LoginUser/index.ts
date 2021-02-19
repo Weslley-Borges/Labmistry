@@ -1,5 +1,5 @@
-import { MySQLUsersRepository } from "../../implementations/MySQLUSersRepository";
-import { JWTRepository } from "../../implementations/JWTRepository";
+import { MySQLUsersRepository } from "../../Implementations/MySQLUSersRepository";
+import { JWTRepository } from "../../Implementations/JWTRepository";
 import { LoginController } from "./LoginController"
 import { LoginUseCase } from "./LoginUseCase"
 

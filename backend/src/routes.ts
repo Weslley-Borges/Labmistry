@@ -1,18 +1,11 @@
 import { Router, Request, Response } from 'express'
-import { createUserController, loginController } from './repositories/user/useCases'
 import { auth } from './middlewares/auth'
-import StudentsController from './tests/UserServices'
+import * as user from './repositories/R_User/useCases'
 
 const routes = Router()
 
-routes.post('/user/signUp', (request: Request, response: Response) => {
-	return createUserController.handle(request, response)
-})
-routes.post('/user/signIn', (request: Request, response: Response) => {
-	return loginController.handle(request, response)
-})
-
-routes.get('/getting', auth, StudentsController.index)
-routes.get('/getting/:email', StudentsController.show)
+routes.post('/user/signUp', (request: Request, response: Response) => { return user.createUserController.handle(request, response) })
+routes.post('/user/signIn', (request: Request, response: Response) => { return user.loginController.handle(request, response) })
+routes.get('/main', auth,(request: Request, response: Response) => { return user.getUserDataController.handle(request, response) })
 
 export default routes

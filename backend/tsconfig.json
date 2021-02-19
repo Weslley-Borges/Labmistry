@@ -11,6 +11,10 @@
     "skipLibCheck": true,
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "removeComments": true
+    "removeComments": true,
+
+    "paths": {
+      "@implementations": ["src/repositories/R_User/Implementations"]
+    }
   }
 }

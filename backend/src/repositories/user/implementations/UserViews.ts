@@ -1,22 +1,21 @@
-import Student from "../Model"
+import User from "../Model"
 
 export default {
-  render(student: Student) {
+  render(user: User) {
     return {
-      id: student.id,
-      username: student.username,
-      email: student.email,
-      userpassword: student.userpassword,
-      state: student.state,
-      school: student.school,
-      bottles: student.bottles,
+      id: user.id,
+      username: user.username,
+      email: user.email,
+      state: user.state,
+      school: user.school,
+      bottles: user.bottles,
     }
   },
-  showAlready(student: Student) {
-    return { email: student.email }
+  showAlready(user: User) {
+    return { email: user.email }
   },
 
-  renderMany(students: Student[]) {
-    return students.map( student => this.render(student))
+  renderMany(users: User[]) {
+    return users.map( user => this.render(user))
   }
 }
