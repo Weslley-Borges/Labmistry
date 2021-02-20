@@ -1,7 +1,6 @@
-import { IUsersRepository, IGetUserDataRequestDTO } from "../../UserDTO";
+import { IUsersRepository, IGetUserDataRequestDTO } from "../../UserDTO"
 import UserViews from "../../controllers/UserViews"
-import User from "../../Model";
-import { getRepository } from "typeorm";
+import User from "../../Model"
 
 /*  Recebimento dos dados dos usuários
     - Verificamos a requisição
@@ -14,23 +13,19 @@ export class GetUserDataUseCase {
   ) {}
 
   async execute(data: IGetUserDataRequestDTO) {
-    const user: User = await this.usersRepository.findUser(data.email, "email")
-    if (user) {
-      if (data.context == "DATA_TO_USER") {
-        return {status: 200, userData: UserViews.render(user), message: "OK"}
-      }
-      else if (data.context === "DATA_TO_TEST") {
-        const usersRepository = getRepository(User)
+    const users: Array<User> = await this.usersRepository.findAllUsers()
+    const user: User | undefined = users.find((user) => { if (user.email == data.email) return user })
 
-		    const users = await usersRepository.find()
-        return {status: 200, userData: UserViews.renderMany(users), message: "OK"}
-      }
-      else {
-        return {status: 401, message: "Esse contexto não existe!"}
-      }
+    if (user) {
+      const appContexts = [
+        {code: "DATA_TO_USER", method: {status: 200 , userData: UserViews.render(user), message: "OK"}},
+        {code: "DATA_TO_TEST", method: {status: 200, userData: UserViews.renderMany(users), message: "OK"}}
+      ]
+      const myContext = appContexts.find((context: any) => { if(context.code === data.context) return context})
+      return myContext != null ? myContext.method : {status: 401, message: "Esse contexto não existe!"}
+
     } else {
       return {status: 401, message: "Usuário inexistente!"}
     }
-    
   }
 }
