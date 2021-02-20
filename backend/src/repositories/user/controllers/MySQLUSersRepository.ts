@@ -12,6 +12,9 @@ export class MySQLUsersRepository implements IUsersRepository{
     if (user) return user
     return null
   }
+  async findAllUsers(): Promise<Array<User>> {
+    return await getRepository(User).find()
+  }
 
   async registerUser(user: ICreateUserRequestDTO): Promise<Boolean> {
     const { username, email, userpassword_request, state, school} = user
