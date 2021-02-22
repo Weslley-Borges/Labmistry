@@ -13,8 +13,11 @@ export class GetUserDataUseCase {
   ) {}
 
   async execute(data: IGetUserDataRequestDTO) {
+
     const users: Array<User> = await this.usersRepository.findAllUsers()
-    const user: User | undefined = users.find((user) => { if (user.email == data.email) return user })
+    const user: User | undefined = users.find((user) => { 
+      if (user.id == data.id) return user 
+    })
 
     if (user) {
       const appContexts = [

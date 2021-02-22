@@ -5,11 +5,8 @@
    "username": "root",
    "password": "",
    "database": "Labmistry",
-   "synchronize": true,
    "logging": false,
-   "entities": [
-      "./src/repositories/**/Model.ts"
-   ],
+   "entities": ["./src/repositories/**/Model.ts"],
    "migrations": [
       "./src/database/migration/*.ts"
    ],

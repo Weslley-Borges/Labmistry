@@ -12,12 +12,12 @@ export interface ILoginRequestDTO {
   userpassword: string
 }
 export interface IGetUserDataRequestDTO {
-  email: string
+  id: string
   context: string
 }
 export interface IUsersRepository {
   findUser(value: string, data: string): Promise<any>
-  findAllUsers(): Promise<Array<User>>
+  findAllUsers(): Promise<any>
   registerUser(user: ICreateUserRequestDTO): Promise<Boolean>
   comparePasswords(requestPassword: string, hashedPassword: string): Promise<Boolean>
 }
