@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* (A) BIG SCREEN */
+    /* (A1) 2 COLUMN LAYOUT */
+    * {
+      margin: 0; padding: 0
+    }
+    #demoC { display: flex; }
+    #demoCSide, #demoCMain { padding: 10px; }
+    #demoCSide {
+      width: 3rem;
+      background: #deffff;
+      transition: opacity 0.3s;
+    }
+    #demoCMain {
+      width: 100%;
+      background: #ffe0de;
+    }
+    /* (A2) HIDE TOGGLE BUTTONS */
+    .cTog { 
+      display: none; 
+      font-size: 2rem;
+    }
+    
+    /* (B) SMALL SCREEN */
+    @media screen AND (max-width:768px) {
+      /* (B1) SHOW TOGGLE BUTTONS */
+      .cTog { display: block; margin-left: 80vw}
+
+      /* (B2) TRANSFORM TO FULL SCREEN */
+      #demoC { display: block; }
+      #demoCMain { width: 100%; }
+      #demoCSide {
+        position: fixed;
+        top: 0; left: 0;
+        z-index: 999;
+        width: 100vw;
+        height: 100vh;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1)
+      }
+
+      /* (B3) SHOW SIDEBAR */
+      #demoC.open #demoCSide { 
+        visibility: visible;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="demoC">
+    <!-- (A) SIDEBAR -->
+    <div id="demoCSide">
+      <!-- (A1) CLOSE SIDEBAR BUTTON -->
+      <button class="cTog" onclick="document.getElementById('demoC').classList.toggle('open')">
+      X
+      </button>
+      <!-- (A2) SIDEBAR -->
+      <div>SIDEBAR</div>
+    </div>
+   
+    <!-- (B) MAIN CONTENTS -->
+    <div id="demoCMain">
+      <!-- (B1) OPEN SIDEBAR BUTTON -->
+      <button class="cTog" onclick="document.getElementById('demoC').classList.toggle('open')">
+      &#9776;
+      </button>
+      <!-- (B2) CONTENTS -->
+      <div>MAIN</div>
+    </div>
+  </div>
+</body>
+</html>

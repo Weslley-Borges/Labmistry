@@ -5,8 +5,9 @@ interface ValidationErrors {
   [key: string]: string[]
 }
 
-
 const errorHandler: ErrorRequestHandler = (error: Error, request, response, next) => {
+
+  console.error(`Houve um erro na aplicação:\n${error}`)
 
   if (error instanceof ValidationError) {
     let errors: ValidationErrors =  {}
@@ -14,7 +15,6 @@ const errorHandler: ErrorRequestHandler = (error: Error, request, response, next
     error.inner.forEach( err => {
       errors[String(err.path)] = err.errors
     })
-
     return response.status(400).json({message: 'Validation Fails', errors})
   }
   // Para mostrar o erro no terminal

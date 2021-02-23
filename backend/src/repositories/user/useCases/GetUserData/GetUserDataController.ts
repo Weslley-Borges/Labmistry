@@ -7,23 +7,19 @@ export class GetUserDataController {
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
-    const { email, context } = request.body
+    const id = request.params.id
 
     try {
-      const result:any = await this.getUserDataUseCase.execute({
-        email, context
-      })
+      const result: any = await this.getUserDataUseCase.execute(id)
     
-      if (result.userData) {
-        response.json({auth: result.auth, message: result.message, data: result.userData})
-      } else response.json(result.message)
+      result.userData 
+        ? response.json({auth: result.auth, message: result.message, data: result.userData})
+        : response.json(result.message)
 
       return result
 
     } catch (err) {
-      return response.status(400).json({
-        message: err.message || "Unexpected error."
-      })
+      return response.status(400).json({ message: err.message || "Unexpected error." })
     }
   }
 }

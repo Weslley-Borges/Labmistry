@@ -29,6 +29,12 @@ To run this project, be either in development or production, you'll only need to
 ## Installing
 Cloning the repository:
 <code>$ git clone https://github.com/Weslley-Borges/Labmistry</code>
+<code>$ yarn install</code>
+Or, if you're dumb
+<code>$ npm install</code>
+## Start the application
+Backend and client:
+<code>$ yarn dev</code>
 
 # Technologies
 - [ReactJS](https://reactjs.org/);

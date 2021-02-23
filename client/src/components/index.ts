@@ -4,3 +4,4 @@ export * from './pageHeader'
 export * from './select'
 export * from './simplePageHeader'
 export * from './textarea'
+export * from "./sidebar"

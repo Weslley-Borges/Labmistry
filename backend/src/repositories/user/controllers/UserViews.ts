@@ -9,6 +9,7 @@ export default {
       state: user.state,
       school: user.school,
       bottles: user.bottles,
+      session_token: user.session_token
     }
   },
   showAlready(user: User) {
