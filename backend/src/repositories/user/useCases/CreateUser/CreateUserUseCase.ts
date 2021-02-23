@@ -33,6 +33,6 @@ export class CreateUserUseCase {
         body: "<p>Agora você pode fazer o login em nossa plataforma</p>"
       })
       return {status: 201, message: "Usuário criado"}
-    } else return {staqtus: 400, message: "Deu um erro na aplicação"}
+    } else return {status: 400, message: "Deu um erro na aplicação"}
   }
 }

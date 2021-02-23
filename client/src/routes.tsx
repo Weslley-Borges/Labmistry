@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Landing, Login, Register, PeriodicTable, Home, LandingChat, NewChat } from "./pages"
+import { Landing, Login, Register, PeriodicTable, Home, LandingChat, NewChat} from "./pages"
 
 export const Routes = () => {
 	return (
@@ -14,6 +14,7 @@ export const Routes = () => {
 				<Route path="/periodc" exact component={PeriodicTable}/>
 				<Route path="/chat" exact component={LandingChat}/>
 				<Route path="/chat/create" exact component={NewChat}/>
+				<Route path="/ss" exact component={Home}/>
       </Switch>
 		</BrowserRouter>
 )}

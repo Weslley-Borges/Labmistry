@@ -17,7 +17,6 @@ export class LoginController {
     
       if (result.sessionUser) {
         response.json({auth: result.auth, message: result.message, session: result.sessionUser})
-        request.session = result.sessionUser
 
       } else response.json(result.message)
       return result
