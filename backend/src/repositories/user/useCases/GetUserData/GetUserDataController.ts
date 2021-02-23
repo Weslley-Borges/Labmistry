@@ -7,10 +7,10 @@ export class GetUserDataController {
   ){}
 
   async handle(request: Request, response: Response): Promise<Response> {
-    const {context, id}  = request.body
+    const id = request.params.id
 
     try {
-      const result: any = await this.getUserDataUseCase.execute({id, context})
+      const result: any = await this.getUserDataUseCase.execute(id)
     
       result.userData 
         ? response.json({auth: result.auth, message: result.message, data: result.userData})
