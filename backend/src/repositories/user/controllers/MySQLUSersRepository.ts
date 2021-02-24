@@ -7,13 +7,14 @@ import User from "../Model";
 export class MySQLUsersRepository implements IUsersRepository{
   
   async findUser(value: string, data: string): Promise<any> {
-    const user = await getRepository(User).createQueryBuilder().where(`${data}= :value`, {value: value}).getOne()
+    const users = await getRepository("users")
+    const user = await users.createQueryBuilder().where(`${data}= :value`, {value: value}).getOne()
 
     if (user) return user
     return null
   }
-  async findAllUsers(): Promise<Array<User>> {
-    return await getRepository(User).find()
+  async findAllUsers(): Promise<any> {
+    return await getRepository("users").createQueryBuilder().getMany()
   }
 
   async registerUser(user: ICreateUserRequestDTO): Promise<Boolean> {
@@ -31,8 +32,8 @@ export class MySQLUsersRepository implements IUsersRepository{
       })
       await schema.validate(newData, {abortEarly: false})
   
-      const usersRepository = getRepository(User)
-      const user = usersRepository.create(newData)
+      const usersRepository = getRepository("users")
+      const user = usersRepository.insert(newData)
       await usersRepository.save(user)
       return true
       

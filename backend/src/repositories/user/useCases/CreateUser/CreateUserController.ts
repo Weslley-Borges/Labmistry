@@ -22,8 +22,10 @@ export class CreateUserController {
       return result
 
     } catch (err) {
+      console.log(err)
       return response.status(400).json({
         message: err.message || "Unexpected error."
+        
       })
     }
   }
