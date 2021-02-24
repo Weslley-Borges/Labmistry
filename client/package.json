@@ -49,5 +49,7 @@
     "@types/jquery": "^3.5.5",
     "@types/react": "^16.14.2",
     "@types/react-router-dom": "^5.1.6"
-  }
+  },
+  "main": "index.js",
+  "license": "MIT"
 }

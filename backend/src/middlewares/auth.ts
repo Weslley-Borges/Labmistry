@@ -16,7 +16,7 @@ export const auth = async (request: Request, response: Response, next: NextFunct
       if (err) return response.status(500).json({ auth: false, message: 'Failed to authenticate token.' })
       tokenDecoded = decoded
     })
-    request.sessionID = tokenDecoded.id;
+    request.user = tokenDecoded
     next()
 
   } catch (error) {

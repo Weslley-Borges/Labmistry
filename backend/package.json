@@ -5,43 +5,48 @@
    "main": "src/main.ts",
    "author": "weslley Borges dos Santos",
    "license": "MIT",
-   "keywords": ["NodeJS","TypeORM","MySQL","API"],
+   "keywords": [
+      "NodeJS",
+      "TypeORM",
+      "MySQL",
+      "API"
+   ],
    "scripts": {
       "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/main.js",
       "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
    },
    "dependencies": {
       "bcryptjs": "^2.4.3",
-      "body-parser": "^1.18.1",
+      "body-parser": "^1.19.0",
       "cookie-parser": "^1.4.5",
       "cors": "^2.8.5",
       "dotenv": "^8.2.0",
-      "express": "^4.15.4",
+      "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "express-session": "^1.17.1",
       "jsonwebtoken": "^8.5.1",
-      "mysql": "^2.14.1",
-      "nodemailer": "^6.4.17",
+      "mysql": "^2.18.1",
+      "nodemailer": "^6.4.18",
       "passport": "^0.4.1",
       "passport-local": "^1.0.0",
-      "typeorm": "0.2.29",
-      "yup": "^0.32.8"
+      "typeorm": "0.2.31",
+      "yup": "^0.32.9"
    },
    "devDependencies": {
       "@types/bcryptjs": "^2.4.2",
       "@types/cookie-parser": "^1.4.2",
-      "@types/cors": "^2.8.9",
+      "@types/cors": "^2.8.10",
       "@types/dotenv": "^8.2.0",
-      "@types/express": "^4.17.9",
+      "@types/express": "^4.17.11",
       "@types/express-session": "^1.17.3",
       "@types/jsonwebtoken": "^8.5.0",
-      "@types/node": "^8.0.29",
+      "@types/node": "^14.14.31",
       "@types/nodemailer": "^6.4.0",
-      "@types/passport": "^1.0.5",
+      "@types/passport": "^1.0.6",
       "@types/passport-local": "^1.0.33",
-      "@types/yup": "^0.29.10",
-      "ts-node": "3.3.0",
-      "ts-node-dev": "^1.0.0",
-      "typescript": "^4.1.2"
+      "@types/yup": "^0.29.11",
+      "ts-node": "9.1.1",
+      "ts-node-dev": "^1.1.1",
+      "typescript": "^4.2.2"
    }
 }
