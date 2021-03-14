@@ -85,7 +85,7 @@
     "name": "Flúor",
     "atomicMass": 18.998,
     "atomicWeight": [ 2, 7 ],
-    "family": "Não_Metal",
+    "family": "Halogênio",
     "position": [ 17, 2 ],
     "formula": [ "F" ]
   } ,
@@ -125,7 +125,7 @@
     "name": "Alumínio",
     "atomicMass": 26.982,
     "atomicWeight": [ 2, 8, 3 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 13, 3 ],
     "formula": [ "Al" ]
   } ,
@@ -165,7 +165,7 @@
     "name": "Cloro",
     "atomicMass": 35.45,
     "atomicWeight": [ 2, 8, 7 ],
-    "family": "Não_Metal",
+    "family": "Halogênio",
     "position": [ 17, 3 ],
     "formula": [ "Cl" ]
   } ,
@@ -305,7 +305,7 @@
     "name": "Gálio",
     "atomicMass": 69.723,
     "atomicWeight": [ 2, 8, 18, 3 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 13, 4 ],
     "formula": [ "Ga" ]
   } ,
@@ -345,7 +345,7 @@
     "name": "Bromo",
     "atomicMass": 79.904,
     "atomicWeight": [ 2, 8, 18, 7 ],
-    "family": "Não_Metal",
+    "family": "Halogênio",
     "position": [ 17, 4 ],
     "formula": [ "Br" ]
   } ,
@@ -485,7 +485,7 @@
     "name": "Ìndio",
     "atomicMass": 114.82,
     "atomicWeight": [ 2, 8, 18, 18, 3 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 13, 5 ],
     "formula": [ "In" ]
   } ,
@@ -495,7 +495,7 @@
     "name": "Eshotan",
     "atomicMass": 204.38,
     "atomicWeight": [ 2, 8, 18, 18, 4 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 14, 5 ],
     "formula": [ "Sn" ]
   } ,
@@ -525,7 +525,7 @@
     "name": "Iodo",
     "atomicMass": 126.9,
     "atomicWeight": [ 2, 8, 18, 18, 7 ],
-    "family": "Não_Metal",
+    "family": "Halogênio",
     "position": [ 17, 5 ],
     "formula": [ "I" ]
   } ,
@@ -805,7 +805,7 @@
     "name": "Tálio",
     "atomicMass": 204.38,
     "atomicWeight": [ 2, 8, 18, 32, 18, 3 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 13, 6 ],
     "formula": [ "Tl" ]
   } ,
@@ -815,7 +815,7 @@
     "name": "Chumbo",
     "atomicMass": 207.2,
     "atomicWeight": [ 2, 8, 18, 32, 18, 4 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 14, 6 ],
     "formula": [ "Pb" ]
   } ,
@@ -825,7 +825,7 @@
     "name": "Bismuto",
     "atomicMass": 208.98,
     "atomicWeight": [ 2, 8, 18, 32, 18, 5 ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 15, 6 ],
     "formula": [ "Bi" ]
   } ,
@@ -835,7 +835,7 @@
     "name": "Polônio",
     "atomicMass": 209,
     "atomicWeight": [ 2, 8, 18, 32, 18, 6 ],
-    "family": "Metal_Representativo",
+    "family": "Semimetal",
     "position": [ 16, 6 ],
     "formula": [ "Po" ]
   } ,
@@ -845,7 +845,7 @@
     "name": "Astato",
     "atomicMass": 210,
     "atomicWeight": [ 2, 8, 18, 32, 18, 7 ],
-    "family": "Semimetal",
+    "family": "Halogênio",
     "position": [ 17, 6 ],
     "formula": [ "At" ]
   } ,
@@ -1206,7 +1206,7 @@
       2,  8, 18, 32,
       32, 18,  3
     ],
-    "family": "Metal_de_Transição",
+    "family": "Outros_Metais",
     "position": [ 13, 7 ],
     "formula": [ "Nh" ]
   } ,
@@ -1219,7 +1219,7 @@
       2,  8, 18, 32,
       32, 18,  4
     ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 14, 7 ],
     "formula": [ "Fl" ]
   } ,
@@ -1232,7 +1232,7 @@
       2,  8, 18, 32,
       32, 18,  5
     ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 15, 7 ],
     "formula": [ "Mc" ]
   } ,
@@ -1245,7 +1245,7 @@
       2,  8, 18, 32,
       32, 18,  6
     ],
-    "family": "Metal_Representativo",
+    "family": "Outros_Metais",
     "position": [ 16, 7 ],
     "formula": [ "Lv" ]
   } ,
@@ -1258,7 +1258,7 @@
       2,  8, 18, 32,
       32, 18,  7
     ],
-    "family": "Semimetal",
+    "family": "Halogênio",
     "position": [ 17, 7 ],
     "formula": [ "Ts" ]
   } ,
