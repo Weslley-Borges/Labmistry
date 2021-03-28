@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "symbol": "H2",
+    "name": "Gás Hidrogênio",
+    "elements": ["H", "H"]
+  },
+  {
+    "id": 2,
+    "symbol": "H2O",
+    "name": "Água",
+    "elements": ["H2","O"]
+  },
+  {
+    "id": 3,
+    "symbol": "O2",
+    "name": "Gás Oxigênio",
+    "elements": ["O","O"]
+  }
+]

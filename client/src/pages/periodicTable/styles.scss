@@ -205,33 +205,6 @@ $other_metals: #ff6262;
       &:checked ~ .overlay{
         opacity: 0.75
       }
-      &:checked ~ .square{
-        z-index: 3;
-        transform: scale(3);
-        transition-duration: 500ms, 0ms, 200ms, 200ms, 200ms, 200ms;
-        transition-delay: 0ms;
-        outline: none;
-        cursor: auto;
-
-        .label{
-          transition-duration: 500ms;
-          transform: scale(0.75);
-        };
-        .atomic-weight{
-          opacity: 0.5;
-          transition: 500ms;
-        }
-        .model{
-          display: block;
-          animation: fade-in;
-          animation-duration: 1s;
-        }
-        .orbital{
-          animation-name: rotate;
-          animation-timing-function: linear;
-          animation-iteration-count: infinite;
-        }
-      }
     }
     &.deactivate{
       position: fixed;
@@ -337,57 +310,7 @@ $other_metals: #ff6262;
 }
 
 
-// ANIMAÇÕES  
-@keyframes rotate {
-  from{
-    transform: rotate(0deg)
-  }
-  to {
-    transform: rotate(360deg)
-  }
-}
 
-@keyframes fade-in {
-  from{
-    opacity: 0
-  }
-  to{
-    opacity: 1
-  }
-}
-
-@keyframes noise{
-  0%, 100%{
-    background-position: 0 0
-  }
-  10% {
-    background-position: -5% -10%
-  }
-  20% {
-    background-position: -15% 5%
-  }
-  30% {
-    background-position: 7% -25%
-  }
-  40% {
-    background-position: 20% 25%
-  }
-  50% {
-    background-position: -25% 10%
-  }
-  60% {
-    background-position: 15% 5%
-  }
-  70% {
-    background-position: 0% 15%
-  }  
-  80% {
-    background-position: 25% 35%
-  }
-  90% {
-    background-position: -10% 10%
-  }
-}
 
 
 
@@ -420,6 +343,47 @@ $other_metals: #ff6262;
       &:hover {
         opacity: 1 !important;
       }
+    }
+  }
+}
+
+
+.popup {
+  position: fixed;
+  z-index: 4;
+  width: 80%;
+  height: 60%;
+  left: 10%;
+  top: 25%;
+  border-radius: 1rem;
+  background-color: #313131;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  .content-img, .content-text {
+    margin-top: 5%;
+  }
+  .content-img {
+    display: flex;
+    width: 40%;
+    float:left;
+    align-items: center;
+
+    img {
+      margin: 0 auto
+    }
+  }
+
+  .content-text {
+    color: yellow;
+    width:50%;
+    float:left;
+    p {
+      color: white;
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
   }
 }

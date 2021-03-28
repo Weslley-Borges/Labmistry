@@ -1,5 +1,5 @@
-import React from 'react'
-import elements from '../../utils/JSON/elements.json'
+import React, {MouseEventHandler, useState} from 'react'
+import elements from '../../utils/elements.json'
 import './styles.scss'
 
 interface Element {
@@ -11,7 +11,24 @@ interface Element {
 	family: string,
 	position: Array<number>,
 	formula: Array<string>
+	image: string;
+	desc: string
 }
+
+
+const ElementModal = (props: any) =>{
+  return (
+		<div className="popup">
+			<div className="popup-inner">
+				{props.children}
+			</div>
+		</div>
+	)
+}
+
+
+
+
 
 function getatomic(weigth: Array<number>): HTMLUListElement | any{
 	return (
@@ -21,24 +38,27 @@ function getatomic(weigth: Array<number>): HTMLUListElement | any{
 	)
 }
 
-function getOrbits(orbits: Array<number>): HTMLDivElement | any{
-	orbits.forEach(orbit => {
-		return(
-			<div className="orbital">
-				{getElectrons(orbit)}
-			</div>
-		)
-	})
-}
-function getElectrons(orbit: number){
-	var rows = [];
-	for (var i = 0; i < orbit; i++) {
-			rows.push(<div className="electron"></div>);
-	}
-	return (rows);
-}
-
 export const PeriodicTable = () => {
+	const [showModal, setShowModal] = useState(false)
+	const [data, setData] = useState({
+    id: 1,
+    symbol: "H",
+    name: "Hidrogênio",
+    atomicMass: 1.008,
+    atomicWeight: [ 1 ],
+    family: "Não_Metal",
+    position: [ 1, 1 ],
+    formula: [ "H" ],
+		image: "",
+		desc: ""
+  },)
+
+	function openModal() {
+    setShowModal(true)
+  }
+	function closeModal() {setShowModal(false)}
+
+
 	const families = [
 		{tag:"Metal_Alcalino", name: "Metais Alcalinos"},
 		{tag:"Metal_Alcalino-terroso", name: "Metais Alcalino-terrosos"},
@@ -60,13 +80,13 @@ export const PeriodicTable = () => {
 					{elements.map((element: Element) => {
 						return (
 							<div className={`element ${element.family} c${element.position[0]} r${element.position[1]}`}>
-								<input className="activate" type="radio" name="elements" />
-								<input className="deactivate" type="radio" name="elements" />
+								<input className="activate" type="radio" name="elements" onClick={() => {
+									setData(element);
+									openModal();
+								}}/>
+								<input className="deactivate" type="radio" name="elements" onClick={closeModal}/>
 								<div className="overlay"></div>
 								<div className="square">
-									<div className="model">
-										{getOrbits(element.atomicWeight)}
-									</div>
 									<div className="atomic-number">{element.id}</div>
 									<div className="label">
 										<div className="symbol">{element.symbol}</div>
@@ -99,6 +119,23 @@ export const PeriodicTable = () => {
 					</div>
 				</div>
 			</div>
+			{
+				showModal 
+				? (
+					<ElementModal>
+						<div className="content-img">
+							<img
+								src={data.image} 
+							alt={data.name}/>
+						</div>
+						<div className="content-text">
+							<h4>{data.name} - {data.symbol}</h4>
+							<h5>Família: {data.family.replace("_"," ")}</h5>
+							<p>{data.desc}</p>
+						</div>
+					</ElementModal>
+				) : null
+			}
 		</div>
 	)
 }

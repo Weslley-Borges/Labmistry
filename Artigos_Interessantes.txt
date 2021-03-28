@@ -1,2 +1,0 @@
-ReactJS NodeJS JWT authentication
-https://loizenai.com/react-node-jwt-authentication/
